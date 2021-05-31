@@ -1,0 +1,49 @@
+@import "src/styles/colors";
+
+.navBar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  padding: .2rem 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover,
+  &:active,
+  &.active {
+    &:after {
+      background: $navActive;
+      max-width: 100%;
+    }
+  }
+
+  &:after {
+    content: "";
+    position: relative;
+    display: block;
+    height: 5px;
+    border-radius: 16px;
+    background: transparent;
+    bottom: 0px;
+    left: 0;
+    z-index: 10;
+    transition: all 0.35s ease;
+    max-width: 0%;
+  }
+}
+
+a {
+  display: flex;
+
+  svg {
+    margin: 1px 5px 1px 0;
+  }
+}

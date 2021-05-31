@@ -1,0 +1,39 @@
+@import "src/styles/colors";
+
+.footer {
+  width: 100%;
+  background-attachment: scroll;
+  padding: 3.9px 26px;
+  background-color: $backgroundFooter;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 8px;
+
+  h3 {
+    font-size: 1rem;
+    color: white;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.copyright {
+  text-align: center;
+}
+
+.body {
+  text-align: center
+}
+
+.socialIcons {
+  display: flex;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  list-style: none;
+  padding: 0
+}

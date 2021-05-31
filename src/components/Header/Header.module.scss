@@ -1,0 +1,25 @@
+@import "src/styles/colors";
+
+.header {
+  position: fixed;
+  z-index: 130;
+  width: 100%;
+  background-attachment: scroll;
+  padding: 3.9px 26px;
+  transition: all 0.3s ease-out 0s;
+  text-overflow: clip;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.highlighted {
+  background-color: $backgroundHeader;
+  outline: rgb(33, 37, 41) dashed 0;
+  box-shadow: rgba(9, 5, 29, 0.173) 0 10px 10px 0;
+  backdrop-filter: blur(15px);
+}
