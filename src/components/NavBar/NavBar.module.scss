@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-li {
+.navBar li {
   padding: .2rem 1rem;
   font-size: 1.2rem;
   color: #fff;
@@ -40,7 +40,7 @@ li {
   }
 }
 
-a {
+.navBar a {
   display: flex;
 
   svg {

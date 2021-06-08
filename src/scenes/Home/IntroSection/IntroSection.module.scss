@@ -1,0 +1,104 @@
+@import "src/styles/colors";
+
+.introContent {
+  position: relative;
+  padding-bottom: 70px;
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.introWrapper {
+  color: $textPrimary;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.introText {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  word-spacing: .2rem;
+
+  .title {
+    font-size: 2.6rem;
+    text-align: center;
+  }
+
+  .description {
+    padding-top: 2.5rem;
+    font-size: 1.3rem;
+    text-align: left;
+    line-height: 1.8rem;
+
+    p {
+      margin: 2rem;
+    }
+  }
+}
+
+.myAvatar {
+ display: block;
+}
+
+.purple {
+  color: $textSecondary;
+}
+
+.introSocial {
+  padding-top: 3rem;
+  text-align: center;
+
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+.socialLinks {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+.socialLink {
+  display: inline-block;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.socialIcon {
+  padding: .75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: $icon;
+  background: hsla(0,0%,100%,.972);
+  border-radius: 50%;
+  transition: .5s;
+}
+
+.socialIcon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px $shadow;
+}

@@ -1,6 +1,7 @@
 @import "src/styles/colors";
 
 .footer {
+  position: relative;
   width: 100%;
   background-attachment: scroll;
   padding: 3.9px 26px;
@@ -23,15 +24,25 @@
 }
 
 .copyright {
+  flex: 1;
   text-align: center;
 }
 
 .body {
+  flex: 1;
   text-align: center
+}
+
+.body li {
+  padding: .2rem 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
 }
 
 .socialIcons {
   display: flex;
+  justify-content: center;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   list-style: none;

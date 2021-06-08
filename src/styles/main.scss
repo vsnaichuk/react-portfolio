@@ -1,11 +1,7 @@
 //styles normalizer
 @import '~modern-normalize/modern-normalize.css';
-
 //fonts
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
-
-//colors
-@import "colors.scss";
 
 html, body {
   height: 100%;
@@ -16,7 +12,32 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  background-image: linear-gradient(to left, RGB(27 20 41), RGB(20 15 35));
-  color: $textPrimary;
+p,h1,h2,h3 {
+  margin: 0;
+}
+
+#tsparticles {
+  position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2d1950;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(178, 121, 216, 0.959);
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(222, 130, 235, 0.911);
+  border-radius: 12px;
 }

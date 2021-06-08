@@ -1,0 +1,71 @@
+@import 'src/styles/animations';
+@import 'src/styles/colors';
+
+.mainSection {
+  background-image: linear-gradient(to bottom left, rgba(17, 16, 16, 0.678), rgba(12, 10, 22, 0.863)), url(../../../assets/home-bg.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding: 9rem 2rem 2rem 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  color: whitesmoke;
+  text-align: left;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.header {
+  padding-top: 9rem
+}
+
+.title {
+  padding-left: .2rem;
+  font-size: 2.4rem;
+}
+
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.1s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+.mainTitle {
+  font-size: 2.5rem;
+  word-spacing: .3rem;
+}
+
+.mainName {
+  color: $textSecondaryDarker;
+  text-transform: uppercase;
+
+}
+
+.logo {
+  width: 40%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.logo img {
+  width: 100%;
+  min-width: 280px;
+  height: auto;
+}
+
+.typewriterWrapper {
+  font-size: 2.2em;
+  color: #be6adf;
+  font-weight: 600;
+}
+.typewriterCursor {
+  font-size: 2.4em;
+  color: #b562d6;
+}

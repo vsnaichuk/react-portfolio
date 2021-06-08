@@ -1,4 +1,7 @@
+@import "src/styles/colors";
+
 .container {
-  padding-top: 110px;
-  padding-bottom: 30px;
+  position: relative;
+  background-image: linear-gradient(to left, RGB(27 20 41), RGB(20 15 35));
+  color: $textPrimary;
 }

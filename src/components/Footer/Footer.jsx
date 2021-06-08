@@ -1,6 +1,4 @@
-import cx from 'classnames';
 import s from './Footer.module.scss';
-import { useState } from 'react';
 import {
   AiFillGithub,
   AiFillInstagram,
@@ -20,7 +18,7 @@ const Footer = () => {
         </div>
 
         <div className={s.copyright}>
-          <h3>Copyright © {year} SB</h3>
+          <h3>Copyright © {year} SV</h3>
         </div>
 
         <div className={s.body}>
