@@ -1,13 +1,14 @@
-import s from './Home.module.scss';
+// import s from './Home.module.scss';
 import MainSection from './MainSection/MainSection';
 import IntroSection from './IntroSection/IntroSection';
+import BaseLayout from '../../layouts/BaseLayout/BaseLayout';
 
 const Home = () => {
   return (
-    <div className={s.home}>
+    <BaseLayout>
       <MainSection />
       <IntroSection />
-    </div>
+    </BaseLayout>
   );
 };
 

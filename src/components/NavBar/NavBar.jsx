@@ -5,36 +5,38 @@ import {
   AiOutlineUser,
 } from 'react-icons/ai';
 import { CgFileDocument } from 'react-icons/cg';
+import { routes } from '../../routes/BaseRoutes';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
     <ul className={s.navBar}>
       <li>
-        <a className={s.active}>
+        <NavLink to={routes.HOME} activeClassName={s.active} exact>
           <AiOutlineHome />
           Home
-        </a>
+        </NavLink>
       </li>
 
       <li>
-        <a>
+        <NavLink to={routes.ABOUT} activeClassName={s.active}>
           <AiOutlineUser />
           About
-        </a>
+        </NavLink>
       </li>
 
       <li>
-        <a>
+        <NavLink to={routes.PROJECTS} activeClassName={s.active}>
           <AiOutlineFundProjectionScreen />
           Projects
-        </a>
+        </NavLink>
       </li>
 
       <li>
-        <a>
+        <NavLink to={routes.RESUME} activeClassName={s.active}>
           <CgFileDocument />
           Resume
-        </a>
+        </NavLink>
       </li>
     </ul>
   );

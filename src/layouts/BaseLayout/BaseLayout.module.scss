@@ -2,6 +2,8 @@
 
 .container {
   position: relative;
+  display: flex;
+  flex-direction: column;
   background-image: linear-gradient(to left, RGB(27 20 41), RGB(20 15 35));
   color: $textPrimary;
 }

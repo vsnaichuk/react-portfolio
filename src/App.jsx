@@ -1,13 +1,8 @@
 import './styles/main.scss';
-import BaseLayout from './layouts/BaseLayout/BaseLayout';
-import HomeScene from './scenes/Home/Home';
+import BaseRoutes from './routes/BaseRoutes';
 
 const App = () => {
-  return (
-    <BaseLayout>
-      <HomeScene />
-    </BaseLayout>
-  );
+  return <BaseRoutes />;
 };
 
 export default App;
