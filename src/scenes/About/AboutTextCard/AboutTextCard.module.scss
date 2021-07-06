@@ -1,0 +1,33 @@
+@import "../../../styles/colors";
+
+.purple {
+  color: $textSecondary;
+}
+
+.card {
+  padding: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+
+  p {
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+.aboutActivity {
+  list-style: none;
+  text-align: left;
+  padding-left: 1px;
+}
+
+.footer {
+  color: #a588c0;
+  font-size: 1rem;
+  text-align: center;
+
+  &:before {
+    content: "\2014\00A0";
+  }
+}

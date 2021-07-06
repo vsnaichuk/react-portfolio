@@ -1,16 +1,20 @@
-// import s from './About.module.scss';
+import s from './About.module.scss';
 import BaseLayout from '../../layouts/BaseLayout/BaseLayout';
+import laptopImg from '../../assets/about-laptop.png';
+import AboutTextCard from './AboutTextCard/AboutTextCard';
+import TechSkills from './TechSkills/TechSkills';
+import GithubActivity from './GithubActivity/GithubActivity';
 
 const About = () => {
   return (
     <BaseLayout>
-      <div fluid className="about-section">
-        <div className={s.aboutWrapper}>
-          <div>
-            <h1 style={s.title}>
+      <div className={s.about}>
+        <div className={s.aboutBox}>
+          <div className={s.aboutDescription}>
+            <h1 className={s.title}>
               Know Who <b className={s.purple}>I'M</b>
             </h1>
-            <p>Text</p>
+            <AboutTextCard />
           </div>
 
           <div className={s.aboutImg}>
@@ -19,15 +23,13 @@ const About = () => {
         </div>
 
         <h2 className={s.skills}>
-          Professional <b className={s.purple}>Skills </b>
+          Professional <b className={s.purple}>Skills</b>
         </h2>
-
-        <Techstack />
+        <TechSkills />
 
         <h2 className={s.githubActivity}>
-          Professional <b className={s.purple}>Skills </b>
+          Days I <b className={s.purple}>Code</b>
         </h2>
-
         <GithubActivity />
       </div>
     </BaseLayout>

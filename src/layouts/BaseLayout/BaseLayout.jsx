@@ -14,7 +14,7 @@ const BaseLayout = ({ children }) => {
       </Header>
 
       <div className={s.container}>
-        <Particles />
+        {/*<Particles />*/}
         {children}
       </div>
 

@@ -5,23 +5,16 @@
   background-image: linear-gradient(to bottom left, rgba(17, 16, 16, 0.678), rgba(12, 10, 22, 0.863)), url(../../../assets/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
-  padding: 9rem 2rem 2rem 9rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.content {
-  color: whitesmoke;
-  text-align: left;
+  padding: 9rem 9rem 3rem;
   display: flex;
   justify-content: space-around;
-  align-content: center;
+  align-items: center;
+  color: whitesmoke;
+  text-align: left;
   flex-wrap: wrap;
 }
 
 .header {
-  padding-top: 9rem
 }
 
 .title {
@@ -68,4 +61,10 @@
 .typewriterCursor {
   font-size: 2.4em;
   color: #b562d6;
+}
+
+@media (max-width: 600px) {
+  .mainSection {
+    padding: 9rem 3rem 1rem;
+  }
 }
