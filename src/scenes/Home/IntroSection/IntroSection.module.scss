@@ -1,6 +1,6 @@
 @import "src/styles/colors";
 
-.introContent {
+.content {
   position: relative;
   padding: 4rem 3rem;
   display: flex;
@@ -9,7 +9,7 @@
   flex-direction: column;
 }
 
-.introWrapper {
+.introduction {
   color: $textPrimary;
   padding-top: 5rem;
   padding-bottom: 2rem;
@@ -20,7 +20,7 @@
   flex-wrap: wrap;
 }
 
-.introText {
+.introductionText {
   display: flex;
   justify-content: space-around;
   align-items: center;

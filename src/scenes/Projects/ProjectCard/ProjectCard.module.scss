@@ -1,0 +1,62 @@
+@import "../../../styles/colors";
+
+.purple {
+  color: $textSecondary;
+}
+
+.card {
+  position: relative;
+  width: 27%;
+  padding: 50px 25px;
+  min-width: 320px;
+}
+
+.cardWrapper {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5;
+  word-wrap: break-word;
+  background-color: transparent;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  opacity: 0.9;
+  transition: all 0.5s ease 0s;
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
+  color: white;
+  height: 100%;
+  &:hover {
+    transform: scale(1.02);
+    overflow: hidden;
+    box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561);
+  }
+}
+
+.image {
+  opacity: .8;
+  border-radius: 10px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.cardBody {
+  flex: 1 1 auto;
+  padding: 1.25rem 0;
+}
+
+.title {
+  margin-bottom: .75rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.description {
+  text-align: justify;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}

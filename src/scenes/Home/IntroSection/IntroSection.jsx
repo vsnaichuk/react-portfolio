@@ -10,9 +10,9 @@ import Tilt from 'react-parallax-tilt';
 
 const IntroSection = () => {
   return (
-    <section className={s.introContent}>
-      <div className={s.introWrapper}>
-        <div className={s.introText}>
+    <section className={s.content}>
+      <div className={s.introduction}>
+        <div className={s.introductionText}>
           <h1 className={s.title}>
             LET ME <span className={s.purple}> INTRODUCE </span>{' '}
             MYSELF

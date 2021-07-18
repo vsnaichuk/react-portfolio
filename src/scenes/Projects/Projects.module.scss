@@ -1,0 +1,38 @@
+@import "src/styles/colors";
+
+.content {
+  padding: 9rem 9rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  color: #fff;
+  font-size: 2.3rem;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.subtitle {
+  margin-top: .5rem;
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 10px
+}
+
+.purple {
+  color: $textSecondary;
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding: 9rem 3rem 1rem;
+  }
+}

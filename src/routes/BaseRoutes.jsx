@@ -6,6 +6,7 @@ import {
 //scenes
 import Home from '../scenes/Home/Home';
 import About from '../scenes/About/About';
+import Projects from '../scenes/Projects/Projects';
 
 export const routes = {
   HOME: '/',
@@ -20,7 +21,7 @@ const BaseRoutes = () => {
       <Switch>
         <Route path={routes.HOME} exact component={Home} />
         <Route path={routes.ABOUT} component={About} />
-        {/*<Route path={routes.ABOUT} component={Projects} />*/}
+        <Route path={routes.PROJECTS} component={Projects} />
         {/*<Route path={routes.RESUME} component={Resume} />*/}
       </Switch>
     </Router>

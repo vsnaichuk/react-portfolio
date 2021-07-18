@@ -1,10 +1,10 @@
 @import "src/styles/colors";
 
-.about {
+.content {
   padding: 9rem 9rem 3rem;
 }
 
-.aboutBox {
+.about {
   padding-left: .2rem;
   font-size: 1rem;
   display: flex;
@@ -53,7 +53,7 @@
 
 
 @media (max-width: 600px) {
-  .about {
+  .content {
     padding: 6rem 3rem 1rem;
   }
 }

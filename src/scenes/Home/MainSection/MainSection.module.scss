@@ -1,7 +1,7 @@
 @import 'src/styles/animations';
 @import 'src/styles/colors';
 
-.mainSection {
+.content {
   background-image: linear-gradient(to bottom left, rgba(17, 16, 16, 0.678), rgba(12, 10, 22, 0.863)), url(../../../assets/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
@@ -64,7 +64,7 @@
 }
 
 @media (max-width: 600px) {
-  .mainSection {
+  .content {
     padding: 9rem 3rem 1rem;
   }
 }

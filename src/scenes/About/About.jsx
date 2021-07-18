@@ -8,8 +8,8 @@ import GithubActivity from './GithubActivity/GithubActivity';
 const About = () => {
   return (
     <BaseLayout>
-      <div className={s.about}>
-        <div className={s.aboutBox}>
+      <div className={s.content}>
+        <div className={s.about}>
           <div className={s.aboutDescription}>
             <h1 className={s.title}>
               Know Who <b className={s.purple}>I'M</b>
