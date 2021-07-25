@@ -36,12 +36,22 @@
 .page {
   display: flex;
   justify-content: center;
-  margin-top: 4rem;
+  margin: 1rem 0 0;
 }
 
 .page > canvas {
   width: 100% !important;
   height: auto !important;
+}
+
+.downloadText {
+  margin-left: 8px;
+  text-transform: uppercase;
+}
+.filename {
+  padding-top: 3px;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 

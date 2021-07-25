@@ -18,29 +18,29 @@
   font-size: 1.2rem;
   color: #fff;
   text-decoration: none;
-  transition: all 0.35s ease;
-
-  &:hover,
-  &:focus,
-  &:active {
-    &:after {
-      background: $navActive;
-      max-width: 100%;
-    }
-  }
-
+  transition: all 0.35s ease-out 0s;
   &:after {
     content: "";
     position: relative;
     display: block;
     height: 5px;
     border-radius: 16px;
-    background: transparent;
+    background: $navActive;
     bottom: 0;
     left: 0;
     z-index: 10;
-    transition: all 0.35s ease;
+    transition: all 0.35s ease-out 0s;
     max-width: 0;
+  }
+  &:hover{
+    &:after {
+      max-width: 100%;
+    }
+  }
+  &.active {
+    &:after {
+      max-width: 0;
+    }
   }
 
 

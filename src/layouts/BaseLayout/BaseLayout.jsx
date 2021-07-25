@@ -8,7 +8,7 @@ import Footer from '../../components/Footer/Footer';
 const BaseLayout = ({ children }) => {
   return (
     <div className={s.layout}>
-      {/*<Particles />*/}
+      <Particles />
 
       <Header>
         <Logo />
