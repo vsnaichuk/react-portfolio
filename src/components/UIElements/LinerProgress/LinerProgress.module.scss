@@ -1,0 +1,45 @@
+@import "src/styles/colors";
+
+.linearProgress {
+  background: transparent;
+  height: 7px;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  overflow: hidden;
+  animation: start 0.3s ease-in;
+}
+
+.linearProgress .bar {
+  position: absolute;
+  background: $backgroundActive;
+  transition: transform 0.2s linear;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.linearProgress .bar1 {
+  animation: progressLinearMovement 2s infinite;
+  animation-delay: 0s;
+}
+
+.linearProgress .bar2 {
+  left: -100%;
+  animation: progressLinearMovement 2s infinite;
+  animation-delay: 0.7s;
+}
+
+@keyframes progressLinearMovement {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}

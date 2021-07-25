@@ -2,9 +2,8 @@
 @import 'src/styles/colors';
 
 .content {
-  background-image: linear-gradient(to bottom left, rgba(17, 16, 16, 0.678), rgba(12, 10, 22, 0.863)), url(../../../assets/home-bg.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
+  margin: 0 auto;
+  max-width: 1440px;
   padding: 9rem 9rem 3rem;
   display: flex;
   justify-content: space-around;

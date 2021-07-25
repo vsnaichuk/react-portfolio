@@ -1,14 +1,17 @@
-// import s from './Home.module.scss';
 import MainSection from './MainSection/MainSection';
 import IntroSection from './IntroSection/IntroSection';
-import BaseLayout from '../../layouts/BaseLayout/BaseLayout';
+import HomeLayout from '../../layouts/HomeLayout/HomeLayout';
+import SectionBG from '../../components/UIElements/SectionBG/SectionBG';
 
 const Home = () => {
   return (
-    <BaseLayout>
-      <MainSection />
+    <HomeLayout>
+      <SectionBG>
+        <MainSection />
+      </SectionBG>
+
       <IntroSection />
-    </BaseLayout>
+    </HomeLayout>
   );
 };
 

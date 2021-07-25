@@ -1,11 +1,11 @@
-import s from './BaseLayout.module.scss';
+import s from './HomeLayout.module.scss';
 import Header from '../../components/Header/Header';
 import Logo from '../../components/Logo/Logo';
 import NavBar from '../../components/NavBar/NavBar';
 import Particles from '../../components/UIElements/Particles/Particles';
 import Footer from '../../components/Footer/Footer';
 
-const BaseLayout = ({ children }) => {
+const HomeLayout = ({ children }) => {
   return (
     <div className={s.layout}>
       {/*<Particles />*/}
@@ -15,11 +15,11 @@ const BaseLayout = ({ children }) => {
         <NavBar />
       </Header>
 
-      <div className={s.container}>{children}</div>
+      {children}
 
       <Footer />
     </div>
   );
 };
 
-export default BaseLayout;
+export default HomeLayout;

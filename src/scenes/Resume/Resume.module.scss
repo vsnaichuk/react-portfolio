@@ -1,0 +1,61 @@
+@import "src/styles/colors";
+
+.content {
+  padding: 9rem 9rem 3rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  color: #fff;
+  font-size: 6rem;
+  font-weight: 200;
+  padding-top: 10px;
+}
+
+.filesImg {
+  width: 35%;
+  min-width: 120px;
+  padding: 1rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .hero-svg2 {
+    fill: #8a4ca8;
+  }
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.page > canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+
+@media (max-width: 600px) {
+  .content {
+    padding: 9rem 3rem 1rem;
+  }
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 924px) {
+  .title {
+    font-size: 4rem;
+  }
+}

@@ -7,6 +7,7 @@ import {
 import Home from '../scenes/Home/Home';
 import About from '../scenes/About/About';
 import Projects from '../scenes/Projects/Projects';
+import Resume from '../scenes/Resume/Resume';
 
 export const routes = {
   HOME: '/',
@@ -22,7 +23,7 @@ const BaseRoutes = () => {
         <Route path={routes.HOME} exact component={Home} />
         <Route path={routes.ABOUT} component={About} />
         <Route path={routes.PROJECTS} component={Projects} />
-        {/*<Route path={routes.RESUME} component={Resume} />*/}
+        <Route path={routes.RESUME} component={Resume} />
       </Switch>
     </Router>
   );

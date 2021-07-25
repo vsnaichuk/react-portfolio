@@ -11,19 +11,15 @@
 
 .introduction {
   color: $textPrimary;
-  padding-top: 5rem;
-  padding-bottom: 2rem;
+  padding: 5rem 0 2rem;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  align-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 .introductionText {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   flex-direction: column;
   word-spacing: .2rem;
 

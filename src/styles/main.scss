@@ -2,14 +2,14 @@
 @import '~modern-normalize/modern-normalize.css';
 
 //fonts
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500&display=swap");
 
 html, body {
   height: 100%;
   width: 100%;
   font-size: 16px;
   margin: 0;
-  font-family: "Raleway", serif !important;
+  font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

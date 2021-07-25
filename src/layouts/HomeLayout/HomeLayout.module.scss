@@ -3,12 +3,8 @@
 .layout {
   background-image: linear-gradient(to left, RGB(27 20 41), RGB(20 15 35));
   color: $textPrimary;
-}
-
-.container {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  max-width: 1440px;
 }
+
