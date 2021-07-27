@@ -1,0 +1,65 @@
+@import "src/styles/colors";
+
+.container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  position: relative;
+  z-index: 11;
+  background-color: #100D19;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  opacity: 0.9;
+  color: white;
+}
+
+.closeWrapper {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  margin-top: -30px;
+  bottom: -30px;
+  display: flex;
+}
+
+.closeIcon {
+  position: relative;
+  right: -3px;
+  top: -1px;
+  stroke-width: 4px;
+  transition: all 0.4s ease 0s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.closeButton {
+  margin-left: auto;
+  right: 0;
+  background-color: #623686;
+  border-radius: 0 0 0 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.08);
+  width: 45px;
+  height: 45px;
+  padding: 0;
+}
+
+@media (max-height: 575px) {
+  .body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}

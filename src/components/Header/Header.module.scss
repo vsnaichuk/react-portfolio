@@ -23,3 +23,14 @@
   box-shadow: rgba(9, 5, 29, 0.173) 0 10px 10px 0;
   backdrop-filter: blur(15px);
 }
+
+@media (max-width: 768px) {
+  .header {
+    background-color: $backgroundHeaderMobile;
+    backdrop-filter: none;
+    padding: 10px 20px;
+  }
+  .container {
+    justify-content: space-between;
+  }
+}

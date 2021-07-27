@@ -14,11 +14,11 @@ const Projects = () => {
           Here are a few projects I've worked on recently.
         </p>
 
-        <div className={s.projects}>
+        <ul className={s.projects}>
           {projects.map((props) => (
-            <ProjectCard {...props} />
+            <ProjectCard key={props.id} {...props} />
           ))}
-        </div>
+        </ul>
       </div>
     </BaseLayout>
   );

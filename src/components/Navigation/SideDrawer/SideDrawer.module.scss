@@ -1,0 +1,12 @@
+@import "src/styles/colors";
+
+.sideDrawer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  height: 100vh;
+  width: 70%;
+  background: $backgroundDrawerMobile;
+  box-shadow: $drawerShadow;
+}

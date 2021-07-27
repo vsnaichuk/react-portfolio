@@ -1,0 +1,54 @@
+@import "../../../styles/colors";
+
+.cardWrapper {
+  padding: 0 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5;
+  word-wrap: break-word;
+  color: white;
+}
+
+.image {
+  display: block;
+  max-width: 600px;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.cardBody {
+  flex: 1 1 auto;
+  padding: 1.25rem 0;
+}
+
+.cardFooter {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  a:first-child {
+    margin-right: 2rem;
+  }
+}
+
+.title {
+  margin-bottom: .75rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.technologies > span {
+  display: inline-block;
+  background-color: RGB(129 72 144 / 56%);
+  border-style: solid;
+  border-color: transparent;
+  border-width: 1px;
+  padding: 2px 10px 2px 10px;
+  margin-right: 8px;
+  border-radius: 50px;
+  font-size: 80%;
+  font-weight: 600;
+}

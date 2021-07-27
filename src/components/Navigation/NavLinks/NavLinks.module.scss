@@ -1,4 +1,4 @@
-@import "src/styles/colors";
+@import "../../../styles/colors";
 
 .navBar {
   list-style: none;
@@ -32,21 +32,47 @@
     transition: all 0.35s ease-out 0s;
     max-width: 0;
   }
-  &:hover{
-    &:after {
-      max-width: 100%;
-    }
-  }
-  &.active {
-    &:after {
-      max-width: 0;
-    }
-  }
 
 
   svg {
     position: relative;
     top: .2rem;
     margin: 1px 5px 1px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navBar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navBar li {
+    padding: .65rem 1.5rem;
+  }
+  .navBar a {
+    font-size: 22px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .navBar a {
+    &:hover{
+      &:after {
+        max-width: 100%;
+      }
+    }
+    &.active {
+      &:after {
+        max-width: 0;
+      }
+    }
+
+    svg {
+      position: relative;
+      top: .2rem;
+      margin: 1px 5px 1px 0;
+    }
   }
 }

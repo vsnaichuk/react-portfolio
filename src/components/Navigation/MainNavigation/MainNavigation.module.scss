@@ -1,0 +1,14 @@
+.navigationDrawerNav {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navigationHeaderNav {
+}
+
+@media (max-width: 768px) {
+  .navigationHeaderNav {
+    display: none;
+  }
+}

@@ -1,3 +1,5 @@
+$white: #fff;
+
 $textPrimary: #fff;
 $textPrimaryDarker: #f5f5f5;
 $textSecondary: #c770f0;
@@ -8,6 +10,13 @@ $backgroundActive: rgba(109,32,197,.84);
 $backgroundTitle: #523479;
 $backgroundHeader: rgba(33,32,56,0.84);
 $backgroundFooter: #0a0416;
+
+$backgroundHeaderMobile: #181a27;
+$backgroundDrawerMobile: #181a27;
+
+$modal-overlay: rgba(0, 0, 0, 0.5);
+$backdrop: rgba(0, 0, 0, 0.75);
+$drawerShadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 
 $navActive: #c95bf5;
 $borderPrimary: #8a49a8;
