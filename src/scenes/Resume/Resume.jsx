@@ -5,11 +5,33 @@ import BaseLayout from '../../layouts/BaseLayout/BaseLayout';
 import { Document, Page, pdfjs } from 'react-pdf';
 import LinerProgress from '../../components/UIElements/LinerProgress/LinerProgress';
 import Button from '../../components/UIElements/Button/Button';
+import { useEffect, useRef, useState } from 'react';
+import throttle from 'lodash.throttle';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
+const resumeLink =
+  'https://raw.githubusercontent.com/VolodumurSN/VolodumurSN/master/CV.pdf';
+
 const Resume = () => {
-  const resumeLink =
-    'https://raw.githubusercontent.com/VolodumurSN/VolodumurSN/master/CV.pdf';
+  const pdfWrapper = useRef(null);
+  const [pdfPageWidth, setPdfPageWidth] = useState(null);
+  useEffect(() => {
+    setPdfPageWidth(
+      pdfWrapper.current?.getBoundingClientRect().width || null,
+    );
+  }, []);
+
+  const removeTextLayerOffset = () => {
+    const textLayers = document.querySelectorAll(
+      '.react-pdf__Page__textContent',
+    );
+    textLayers.forEach((layer) => {
+      const { style } = layer;
+      style.top = '0';
+      style.left = '0';
+      style.transform = '';
+    });
+  };
 
   return (
     <BaseLayout>
@@ -35,19 +57,21 @@ const Resume = () => {
           <span className={s.filename}>.pdf</span>
         </Button>
 
-        <Document
-          loading={<LinerProgress />}
-          file={{
-            url: resumeLink,
-          }}
-        >
-          <Page
+        <div className={s.pdfWrapper} ref={pdfWrapper}>
+          <Document
             loading={<LinerProgress />}
-            className={s.page}
-            width={1000}
-            pageNumber={1}
-          />
-        </Document>
+            file={{
+              url: resumeLink,
+            }}
+          >
+            <Page
+              onLoadSuccess={removeTextLayerOffset}
+              loading={<LinerProgress />}
+              width={pdfPageWidth}
+              pageNumber={1}
+            />
+          </Document>
+        </div>
       </div>
     </BaseLayout>
   );

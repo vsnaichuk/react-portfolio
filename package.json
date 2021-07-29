@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "classnames": "^2.3.1",
-    "i": "^0.3.6",
+    "lodash.throttle": "^4.1.1",
     "modern-normalize": "^1.1.0",
     "node-sass": "^6.0.0",
     "npm": "^7.20.0",

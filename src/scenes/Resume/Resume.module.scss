@@ -11,10 +11,10 @@
 }
 
 .title {
+  padding-top: 10px;
   color: #fff;
   font-size: 6rem;
   font-weight: 200;
-  padding-top: 10px;
 }
 
 .filesImg {
@@ -33,15 +33,9 @@
   }
 }
 
-.page {
-  display: flex;
-  justify-content: center;
-  margin: 1rem 0 0;
-}
-
-.page > canvas {
-  width: 100% !important;
-  height: auto !important;
+.pdfWrapper {
+  width: 100%;
+  padding: 1rem 0;
 }
 
 .downloadText {
@@ -59,8 +53,16 @@
   .content {
     padding: 9rem 3rem 1rem;
   }
+  .header {
+    padding-bottom: 10px;
+  }
   .title {
     font-size: 3rem;
+  }
+
+  .pdfWrapper {
+    width: 100%;
+    padding: 2rem 0;
   }
 }
 

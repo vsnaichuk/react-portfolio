@@ -40,13 +40,12 @@
 
 }
 
-.logo {
+.homeMainIcon {
   width: 40%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 0 15px;
 }
 
-.logo img {
+.homeMainIcon img {
   width: 100%;
   min-width: 280px;
   height: auto;
@@ -65,5 +64,12 @@
 @media (max-width: 600px) {
   .content {
     padding: 9rem 3rem 1rem;
+  }
+}
+
+@media (max-width: 475px) {
+  .homeMainIcon {
+    width: 100%;
+    padding: 0;
   }
 }

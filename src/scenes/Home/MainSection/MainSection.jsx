@@ -1,5 +1,5 @@
 import s from './MainSection.module.scss';
-import homeLogo from '../../../assets/home-main.svg';
+import homeMainIcon from '../../../assets/home-main.svg';
 import Typewriter from '../../../components/UIElements/Typewriter/Typewriter';
 
 const MainSection = () => {
@@ -29,8 +29,8 @@ const MainSection = () => {
         </div>
       </div>
 
-      <div className={s.logo}>
-        <img src={homeLogo} alt="home picture" />
+      <div className={s.homeMainIcon}>
+        <img src={homeMainIcon} alt="home picture" />
       </div>
     </section>
   );
