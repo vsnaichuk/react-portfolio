@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "classnames": "^2.3.1",
-    "lodash.throttle": "^4.1.1",
     "modern-normalize": "^1.1.0",
     "node-sass": "^6.0.0",
     "npm": "^7.20.0",
@@ -12,6 +11,7 @@
     "react-dom": "^17.0.2",
     "react-github-calendar": "^2.0.2",
     "react-icons": "^4.2.0",
+    "react-media": "^1.10.0",
     "react-parallax-tilt": "^1.5.22",
     "react-particles-js": "^3.4.1",
     "react-pdf": "^5.3.2",
@@ -20,11 +20,17 @@
     "react-tilty": "^2.0.3",
     "react-transition-group": "^4.4.2",
     "typewriter-effect": "^2.17.0",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "workbox-core": "^5.1.4",
+    "workbox-expiration": "^5.1.4",
+    "workbox-precaching": "^5.1.4",
+    "workbox-routing": "^5.1.4",
+    "workbox-strategies": "^5.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "serve": "serve -s build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

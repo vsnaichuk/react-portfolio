@@ -1,5 +1,3 @@
-@import "src/styles/colors";
-
 .linearProgress {
   background: transparent;
   height: 7px;
@@ -13,7 +11,7 @@
 
 .linearProgress .bar {
   position: absolute;
-  background: $backgroundActive;
+  background: var(--bg-active);
   transition: transform 0.2s linear;
   left: 0;
   top: 0;

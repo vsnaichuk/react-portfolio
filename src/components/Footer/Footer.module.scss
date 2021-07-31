@@ -1,11 +1,9 @@
-@import "src/styles/colors";
-
 .footer {
   position: relative;
   width: 100%;
   background-attachment: scroll;
   padding: 3.9px 26px;
-  background-color: $backgroundFooter;
+  background-color: var(--bg-footer);
 }
 
 .container {
@@ -17,7 +15,7 @@
 
   h3 {
     font-size: 1rem;
-    color: white;
+    color: var(--txt);
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
@@ -36,7 +34,7 @@
 .body li {
   padding: .2rem 1rem;
   font-size: 1.2rem;
-  color: #fff;
+  color: var(--txt);
   cursor: pointer;
 }
 
@@ -47,4 +45,8 @@
   margin-bottom: 0.5rem;
   list-style: none;
   padding: 0
+}
+
+.socialIcons {
+  color: var(--txt)
 }

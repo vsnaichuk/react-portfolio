@@ -1,5 +1,3 @@
-@import "../../../styles/colors";
-
 .navBar {
   list-style: none;
   margin: 0;
@@ -16,7 +14,7 @@
 
 .navBar a {
   font-size: 1.2rem;
-  color: #fff;
+  color: var(--txt);
   text-decoration: none;
   transition: all 0.35s ease-out 0s;
   &:after {
@@ -25,7 +23,7 @@
     display: block;
     height: 5px;
     border-radius: 16px;
-    background: $navActive;
+    background: var(--nav-active);
     bottom: 0;
     left: 0;
     z-index: 10;

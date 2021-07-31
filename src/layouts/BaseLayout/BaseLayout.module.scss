@@ -1,8 +1,6 @@
-@import "src/styles/colors";
-
 .layout {
-  background: #100D19;
-  color: $textPrimary;
+  background: var(--bg-layout-base);
+  color: var(--txt);
 }
 
 .container {

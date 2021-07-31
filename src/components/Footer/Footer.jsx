@@ -24,25 +24,19 @@ const Footer = () => {
         <div className={s.body}>
           <ul className={s.socialIcons}>
             <li>
-              <a
-                href="https://github.com/"
-                style={{ color: 'white' }}
-              >
+              <a href="https://github.com/" className={s.socialIcon}>
                 <AiFillGithub />
               </a>
             </li>
             <li>
-              <a
-                href="https://twitter.com/"
-                style={{ color: 'white' }}
-              >
+              <a href="https://twitter.com/" className={s.socialIcon}>
                 <AiOutlineTwitter />
               </a>
             </li>
             <li>
               <a
                 href="https://www.linkedin.com/"
-                style={{ color: 'white' }}
+                className={s.socialIcon}
               >
                 <FaLinkedinIn />
               </a>
@@ -50,7 +44,7 @@ const Footer = () => {
             <li>
               <a
                 href="https://www.instagram.com/"
-                style={{ color: 'white' }}
+                className={s.socialIcon}
               >
                 <AiFillInstagram />
               </a>

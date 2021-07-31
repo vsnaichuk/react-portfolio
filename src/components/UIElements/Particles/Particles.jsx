@@ -1,36 +1,21 @@
 import ReactParticles from 'react-particles-js';
+import {
+  DARK_THEME_PARTICLES,
+  LIGHT_THEME_PARTICLES,
+} from './particleType';
+import { useThemeContext } from '../../../hooks/themeHook/themeHook';
 
 const Particles = () => {
+  const { dark } = useThemeContext();
+
+  const particles = dark
+    ? DARK_THEME_PARTICLES
+    : LIGHT_THEME_PARTICLES;
+
   return (
     <ReactParticles
       params={{
-        particles: {
-          number: {
-            value: 160,
-            density: {
-              enable: true,
-              value_area: 1500,
-            },
-          },
-          line_linked: {
-            enable: false,
-            opacity: 0.03,
-          },
-          move: {
-            direction: 'right',
-            speed: 0.05,
-          },
-          size: {
-            value: 1,
-          },
-          opacity: {
-            anim: {
-              enable: true,
-              speed: 1,
-              opacity_min: 0.05,
-            },
-          },
-        },
+        particles: particles,
         interactivity: {
           events: {
             onclick: {

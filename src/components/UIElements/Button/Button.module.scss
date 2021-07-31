@@ -19,11 +19,11 @@
   }
 
   &.primary {
-    color: #fff;
+    color: var(--btn-primary-txt);
     background-color: #623686;
     border-color: #623686;
     &:hover {
-      color: #fff;
+      color: var(--btn-primary-txt);
       background-color: rgba(109, 32, 197, 0.8431372549019608);
       border-color: rgba(109, 32, 197, 0.8431372549019608);
     }

@@ -1,5 +1,3 @@
-@import "src/styles/colors";
-
 .preloader {
   position: fixed;
   top: 0;
@@ -7,7 +5,7 @@
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: $preloader;
+  background-color: var(--preloader);
   background-image: url(../../../assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;

@@ -1,5 +1,5 @@
 .sectionBG {
-  background-image: linear-gradient(to bottom left, rgba(17, 16, 16, 0.678), rgba(12, 10, 22, 0.863)), url(../../../assets/home-bg.jpg);
+  background-image: var(--bg-home-section-main);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;

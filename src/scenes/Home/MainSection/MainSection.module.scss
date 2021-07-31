@@ -1,5 +1,4 @@
 @import 'src/styles/animations';
-@import 'src/styles/colors';
 
 .content {
   margin: 0 auto;
@@ -8,7 +7,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: whitesmoke;
+  color: var(--theme-color);
   text-align: left;
   flex-wrap: wrap;
 }
@@ -35,7 +34,7 @@
 }
 
 .mainName {
-  color: $textSecondaryDarker;
+  color: var(--txt-sec-darcker);
   text-transform: uppercase;
 
 }

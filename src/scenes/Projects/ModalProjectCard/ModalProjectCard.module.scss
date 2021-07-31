@@ -1,5 +1,3 @@
-@import "../../../styles/colors";
-
 .cardWrapper {
   padding: 0 0 1.25rem;
   display: flex;
@@ -7,7 +5,7 @@
   align-items: center;
   line-height: 1.5;
   word-wrap: break-word;
-  color: white;
+  color: var(--txt);
 }
 
 .image {
@@ -51,4 +49,5 @@
   border-radius: 50px;
   font-size: 80%;
   font-weight: 600;
+  color: var(--tags-txt);
 }

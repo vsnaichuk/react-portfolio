@@ -1,7 +1,5 @@
-@import "../../../styles/colors";
-
 .purple {
-  color: $textSecondary;
+  color: var(--txt-secondary);
 }
 
 .card {
@@ -25,7 +23,7 @@
   opacity: 0.9;
   transition: all 0.5s ease 0s;
   box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
-  color: white;
+  color: var(--txt);
   height: 100%;
   &:hover {
     transform: scale(1.02);

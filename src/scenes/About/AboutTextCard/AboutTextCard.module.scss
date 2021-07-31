@@ -1,7 +1,5 @@
-@import "../../../styles/colors";
-
 .purple {
-  color: $textSecondary;
+  color: var(--txt-secondary);
 }
 
 .card {

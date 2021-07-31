@@ -1,3 +1,1 @@
-@import "src/styles/colors";
-
-:export { logoPrimary: $logoPrimary; }
+:export { logoPrimary: var(--logo-primary); }

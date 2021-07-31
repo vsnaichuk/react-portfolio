@@ -6,7 +6,6 @@ import { Document, Page, pdfjs } from 'react-pdf';
 import LinerProgress from '../../components/UIElements/LinerProgress/LinerProgress';
 import Button from '../../components/UIElements/Button/Button';
 import { useEffect, useRef, useState } from 'react';
-import throttle from 'lodash.throttle';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const resumeLink =

@@ -1,5 +1,4 @@
 import cx from 'classnames';
-import React from 'react';
 import s from './Button.module.scss';
 
 const Button = ({
@@ -11,12 +10,13 @@ const Button = ({
   href,
   target,
   style,
+  addClass,
 }) => {
   if (href) {
     return (
       <a
         style={style}
-        className={cx(s.btn, s[className])}
+        className={cx(s.btn, s[className], addClass)}
         href={href}
         target={target}
       >
@@ -28,7 +28,7 @@ const Button = ({
   return (
     <button
       style={style}
-      className={cx(s.btn, s[className])}
+      className={cx(s.btn, s[className], addClass)}
       type={type}
       onClick={onClick}
       disabled={disabled}

@@ -4,11 +4,19 @@
   justify-content: center;
 }
 
-.navigationHeaderNav {
+.desktop {
+  display: flex;
+}
+
+.mobile {
+  display: none;
 }
 
 @media (max-width: 768px) {
-  .navigationHeaderNav {
+  .desktop {
     display: none;
+  }
+  .mobile {
+    display: flex;
   }
 }
