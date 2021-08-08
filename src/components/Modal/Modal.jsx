@@ -1,18 +1,17 @@
-import cx from 'classnames';
 import s from './Modal.module.scss';
 import { ReactComponent as ModalCloseIcon } from '../../assets/modal-close.svg';
 import { useHistory } from 'react-router-dom';
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
+import { CSSTransition } from 'react-transition-group';
 import Backdrop from '../UIElements/Backdrop/Backdrop';
 
-const Modal = ({ children }) => {
+const Modal = ({ children, show, onClose }) => {
   const history = useHistory();
-  const modal = useRef(null);
 
   const closeModal = (e) => {
+    onClose();
     e.stopPropagation();
     history.goBack();
-    modal.current.classList.add('slide-out-bottom');
   };
 
   useEffect(() => {
@@ -24,18 +23,26 @@ const Modal = ({ children }) => {
   }, []);
 
   return (
-    <div className={s.container} onClick={closeModal}>
-      <Backdrop />
+    <div className={s.container}>
+      {show && <Backdrop onClick={closeModal} />}
 
-      <div ref={modal} className={cx(s.modal, 'slide-in-bottom')}>
-        <div className={s.closeWrapper} onClick={closeModal}>
-          <button className={s.closeButton}>
-            <ModalCloseIcon className={s.closeIcon} />
-          </button>
+      <CSSTransition
+        in={show}
+        timeout={300}
+        classNames="modal"
+        mountOnEnter
+        unmountOnExit
+      >
+        <div className={s.modal}>
+          <div className={s.closeWrapper} onClick={closeModal}>
+            <button className={s.closeButton}>
+              <ModalCloseIcon className={s.closeIcon} />
+            </button>
+          </div>
+
+          {children}
         </div>
-
-        {children}
-      </div>
+      </CSSTransition>
     </div>
   );
 };

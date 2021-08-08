@@ -1,6 +1,6 @@
 import s from './Projects.module.scss';
 import BaseLayout from '../../layouts/BaseLayout/BaseLayout';
-import { projects } from '../../data';
+import { PROJECTS } from '../../constants/projects';
 import ProjectCard from './ProjectCard/ProjectCard';
 
 const Projects = () => {
@@ -15,7 +15,7 @@ const Projects = () => {
         </p>
 
         <ul className={s.projects}>
-          {projects.map((props) => (
+          {PROJECTS.map((props) => (
             <ProjectCard key={props.id} {...props} />
           ))}
         </ul>

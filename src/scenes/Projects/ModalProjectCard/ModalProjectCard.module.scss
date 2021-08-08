@@ -21,6 +21,7 @@
 .cardBody {
   flex: 1 1 auto;
   padding: 1.25rem 0;
+  max-width: 90%;
 }
 
 .cardFooter {
@@ -38,6 +39,13 @@
   text-align: center;
 }
 
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
 .technologies > span {
   display: inline-block;
   background-color: RGB(129 72 144 / 56%);
@@ -45,7 +53,7 @@
   border-color: transparent;
   border-width: 1px;
   padding: 2px 10px 2px 10px;
-  margin-right: 8px;
+  margin: 0 4px 8px;
   border-radius: 50px;
   font-size: 80%;
   font-weight: 600;

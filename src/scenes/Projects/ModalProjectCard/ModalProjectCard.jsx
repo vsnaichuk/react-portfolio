@@ -2,15 +2,24 @@ import s from './ModalProjectCard.module.scss';
 import { BiLinkExternal } from 'react-icons/all';
 import Modal from '../../../components/Modal/Modal';
 import Button from '../../../components/UIElements/Button/Button';
-import { useLocation } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useModal } from '../../../hooks/modalHook';
+import { PROJECTS } from '../../../constants/projects';
 
 const ModalProjectCard = () => {
-  const {
-    state: { image, title, links, technologies },
-  } = useLocation();
+  const { id } = useParams();
+  const { image, title, links, technologies } = PROJECTS.find(
+    (p) => id === p.id,
+  );
+  const { isVisible, toggleModal } = useModal();
+
+  useEffect(() => {
+    toggleModal();
+  }, []);
 
   return (
-    <Modal>
+    <Modal show={isVisible} onClose={toggleModal}>
       <div className={s.cardWrapper}>
         <div className={s.image}>
           <img src={image} alt="card-img" />
@@ -33,7 +42,7 @@ const ModalProjectCard = () => {
             href={links.site}
             target="_blank"
           >
-            <BiLinkExternal /> &nbsp; Visit website
+            <BiLinkExternal /> &nbsp; View project
           </Button>
 
           <Button
