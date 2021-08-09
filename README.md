@@ -1,4 +1,6 @@
 # Getting Started with Create React App
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FVolodumurSN%2FReact-Portfolio.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FVolodumurSN%2FReact-Portfolio?ref=badge_shield)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +70,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FVolodumurSN%2FReact-Portfolio.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FVolodumurSN%2FReact-Portfolio?ref=badge_large)
