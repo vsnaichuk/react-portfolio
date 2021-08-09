@@ -18,10 +18,9 @@ const MainSection = () => {
         <div style={{ paddingTop: 50 }}>
           <Typewriter
             strings={[
-              'Developer',
-              'Deep Learning Engineer',
               'MERN Stack Developer',
-              'Open Source Contributor',
+              'Continuously Learning',
+              'React Native Developer',
             ]}
             wrapperClassName={s.typewriterWrapper}
             cursorClassName={s.typewriterCursor}
@@ -30,7 +29,7 @@ const MainSection = () => {
       </div>
 
       <div className={s.homeMainIcon}>
-        <img src={homeMainIcon} alt="home picture" />
+        <img src={homeMainIcon} alt="home-img" />
       </div>
     </section>
   );

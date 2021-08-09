@@ -8,8 +8,10 @@ const AboutTextCard = () => {
         Hi Everyone, I am{' '}
         <span className={s.purple}>Snaichuk Volodumur </span>
         from <span className={s.purple}> Ternopil, Ukraine.</span>
-        <br />I am a junior pursuing IMSC in Maths and Computing in
-        BIT Mesra.
+        <br />
+        Skilled Full Stack Developer. Bachelor in Computer Science
+        from <br />
+        West Ukrainian National University, Ternopil.
         <br />
         <br />
         Apart from coding, some other activities that I love to do!
@@ -20,7 +22,7 @@ const AboutTextCard = () => {
           <ImPointRight /> Playing Games
         </li>
         <li className={s.aboutActivity}>
-          <ImPointRight /> Writting Tech Blogs
+          <ImPointRight /> Reading
         </li>
         <li className={s.aboutActivity}>
           <ImPointRight /> Travelling
@@ -31,11 +33,11 @@ const AboutTextCard = () => {
         style={{
           color: 'rgb(155 126 172)',
           textAlign: 'center',
+          marginTop: '1rem',
         }}
       >
         "Strive to build things that make a difference!"{' '}
       </p>
-      <footer className={s.footer}>SV</footer>
     </div>
   );
 };

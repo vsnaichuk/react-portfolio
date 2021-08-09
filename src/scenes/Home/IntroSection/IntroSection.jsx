@@ -1,11 +1,11 @@
 import s from './IntroSection.module.scss';
 import avatar from '../../../assets/avatar.svg';
+import { AiFillGithub } from 'react-icons/ai';
 import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from 'react-icons/ai';
-import { FaLinkedinIn } from 'react-icons/fa';
+  FaFacebookSquare,
+  FaLinkedinIn,
+  FaTelegramPlane,
+} from 'react-icons/fa';
 import Tilt from 'react-parallax-tilt';
 
 const IntroSection = () => {
@@ -25,9 +25,10 @@ const IntroSection = () => {
             </p>
 
             <p>
-              My field of Interest's are building new &nbsp;
+              My field of Interest's are building new
               <i>
                 <b className={s.purple}>
+                  {' '}
                   Web Technologies and Products
                 </b>
               </i>
@@ -35,7 +36,7 @@ const IntroSection = () => {
 
             <p>
               A passionate Full Stack Software Developer 🚀 <br />I
-              have an experience of building &nbsp;
+              have an experience of building{' '}
               <i>
                 <b className={s.purple}>Web and Mobile</b>
               </i>{' '}
@@ -67,7 +68,7 @@ const IntroSection = () => {
         <ul className={s.socialLinks}>
           <li className={s.socialLink}>
             <a
-              href="https://github.com/"
+              href="https://github.com/VolodumurSN"
               target="_blank"
               rel="noreferrer"
               className={s.socialIcon}
@@ -77,32 +78,32 @@ const IntroSection = () => {
           </li>
           <li className={s.socialLink}>
             <a
-              href="https://twitter.com/"
+              href="https://www.facebook.com/Snaychuk"
               target="_blank"
               rel="noreferrer"
               className={s.socialIcon}
             >
-              <AiOutlineTwitter />
+              <FaFacebookSquare />
             </a>
           </li>
           <li className={s.socialLink}>
             <a
-              href="https://www.linkedin.com/"
+              href="https://t.me/snaichuk_v"
+              target="_blank"
+              rel="noreferrer"
+              className={s.socialIcon}
+            >
+              <FaTelegramPlane />
+            </a>
+          </li>
+          <li className={s.socialLink}>
+            <a
+              href="https://www.linkedin.com/in/volodumur-snaichuk-74a389124/"
               target="_blank"
               rel="noreferrer"
               className={s.socialIcon}
             >
               <FaLinkedinIn />
-            </a>
-          </li>
-          <li className={s.socialLink}>
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noreferrer"
-              className={s.socialIcon}
-            >
-              <AiFillInstagram />
             </a>
           </li>
         </ul>
