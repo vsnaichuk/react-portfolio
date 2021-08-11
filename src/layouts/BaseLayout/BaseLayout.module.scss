@@ -1,6 +1,7 @@
 .layout {
   background: var(--bg-layout-base);
   color: var(--txt);
+  height: 100%;
 }
 
 .container {
@@ -9,4 +10,5 @@
   flex-direction: column;
   margin: 0 auto;
   max-width: 1440px;
+  min-height: 100vh;
 }

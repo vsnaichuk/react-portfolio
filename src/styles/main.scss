@@ -14,13 +14,16 @@
 @import "theme";
 
 html, body {
-  height: 100%;
-  width: 100%;
   font-size: 16px;
   margin: 0;
   font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
 }
 
 @media (max-width: 600px) {
