@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useModal } from '../../../hooks/modalHook';
 import { PROJECTS } from '../../../constants/projects';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const ModalProjectCard = () => {
   const { id } = useParams();
@@ -21,9 +22,14 @@ const ModalProjectCard = () => {
   return (
     <Modal show={isVisible} onClose={toggleModal}>
       <div className={s.cardWrapper}>
-        <div className={s.image}>
-          <img src={image} alt="card-img" />
-        </div>
+        <LazyLoadImage
+          alt="project-img"
+          src={image.src}
+          effect="blur"
+          width="100%"
+          wrapperClassName={s.image}
+          placeholderSrc={image.placeholderSrc}
+        />
 
         <div className={s.cardBody}>
           <h3 className={s.title}>{title}</h3>

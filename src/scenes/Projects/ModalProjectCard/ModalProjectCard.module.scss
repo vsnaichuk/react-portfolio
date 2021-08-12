@@ -10,12 +10,8 @@
 
 .image {
   display: block;
-  max-width: 600px;
-
-  img {
-    display: block;
-    width: 100%;
-  }
+  max-width: 38rem;
+  min-height: 20rem;
 }
 
 .cardBody {

@@ -1,6 +1,7 @@
 import s from './MainSection.module.scss';
 import homeMainIcon from '../../../assets/home-main.svg';
 import Typewriter from '../../../components/UIElements/Typewriter/Typewriter';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const MainSection = () => {
   return (
@@ -28,9 +29,12 @@ const MainSection = () => {
         </div>
       </div>
 
-      <div className={s.homeMainIcon}>
-        <img src={homeMainIcon} alt="home-img" />
-      </div>
+      <LazyLoadImage
+        alt="home-img"
+        effect="blur"
+        src={homeMainIcon}
+        wrapperClassName={s.homeMainIcon}
+      />
     </section>
   );
 };

@@ -7,6 +7,8 @@ import {
   FaTelegramPlane,
 } from 'react-icons/fa';
 import Tilt from 'react-parallax-tilt';
+import homeMainIcon from '../../../assets/home-main.svg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const IntroSection = () => {
   return (
@@ -53,9 +55,7 @@ const IntroSection = () => {
         </div>
 
         <Tilt trackOnWindow={true}>
-          <div className={s.myAvatar}>
-            <img src={avatar} alt="avatar" />
-          </div>
+          <LazyLoadImage alt="avatar" effect="blur" src={avatar} />
         </Tilt>
       </div>
 
