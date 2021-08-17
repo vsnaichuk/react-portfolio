@@ -67,7 +67,7 @@ const IntroSection = () => {
         <ul className={s.socialLinks}>
           <li className={s.socialLink}>
             <a
-              href="https://github.com/VolodumurSN"
+              href="https://github.com/vsnaichuk"
               target="_blank"
               rel="noreferrer"
               className={s.socialIcon}

@@ -14,7 +14,7 @@ const Footer = () => {
     <div className={s.footer}>
       <div className={s.container}>
         <div className={s.copyright}>
-          <h3>Designed and Developed by Snaichuk Volodumur</h3>
+          <h3>Designed and Developed by Snaichuk Volodymyr</h3>
         </div>
 
         <div className={s.copyright}>
@@ -25,7 +25,7 @@ const Footer = () => {
           <ul className={s.socialIcons}>
             <li>
               <a
-                href="https://github.com/VolodumurSN"
+                href="https://github.com/vsnaichuk"
                 target="_blank"
                 rel="noreferrer"
               >

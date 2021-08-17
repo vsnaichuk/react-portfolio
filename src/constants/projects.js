@@ -11,7 +11,7 @@ export const PROJECTS = [
     },
     links: {
       site: 'https://apiko-marketplace-app-snaichuk.herokuapp.com/',
-      repo: 'https://github.com/VolodumurSN/apiko-marketplace-app-snaichuk',
+      repo: 'https://github.com/vsnaichuk/apiko-marketplace-app-snaichuk',
     },
     technologies: [
       '#react',
@@ -35,7 +35,7 @@ export const PROJECTS = [
     },
     links: {
       site: 'https://yourplaces-sv.netlify.app/',
-      repo: 'https://github.com/VolodumurSN/MERN-places',
+      repo: 'https://github.com/vsnaichuk/MERN-places',
     },
     technologies: [
       '#react',
@@ -61,7 +61,7 @@ export const PROJECTS = [
     },
     links: {
       site: 'https://expo.dev/@v_snaichuk/online-shop-app',
-      repo: 'https://github.com/VolodumurSN/RN-shop',
+      repo: 'https://github.com/vsnaichuk/RN-shop',
     },
     technologies: [
       '#react-native',
@@ -86,7 +86,7 @@ export const PROJECTS = [
     },
     links: {
       site: 'https://expo.dev/@v_snaichuk/rn-places',
-      repo: 'https://github.com/VolodumurSN/RN-places',
+      repo: 'https://github.com/vsnaichuk/RN-places',
     },
     technologies: [
       '#react-native',
@@ -110,7 +110,7 @@ export const PROJECTS = [
     },
     links: {
       site: 'https://shopping-cart-sv.netlify.app/',
-      repo: 'https://github.com/VolodumurSN/React-ShoppingCart',
+      repo: 'https://github.com/vsnaichuk/React-ShoppingCart',
     },
     technologies: ['#react', '#javascript', '#scss'],
   },

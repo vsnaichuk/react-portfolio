@@ -14,7 +14,7 @@ const GithubActivity = () => {
   return (
     <div className={s.container}>
       <GitHubCalendar
-        username="VolodumurSN"
+        username="vsnaichuk"
         blockSize={15}
         blockMargin={5}
         theme={colorTheme}
