@@ -9,8 +9,9 @@ const AboutTextCard = () => {
         <span className={s.purple}>Snaichuk Volodumur </span>
         from <span className={s.purple}> Ternopil, Ukraine.</span>
         <br />
-        Skilled MERN Stack and React Native Developer. Bachelor in
-        Computer Science from <br />
+        Skilled MERN Stack and React Native Developer.
+        <br /> Bachelor in Computer Science from
+        <br />
         West Ukrainian National University, Ternopil.
         <br />
         <br />

@@ -8,7 +8,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .aboutDescription {
@@ -53,5 +52,11 @@
 @media (max-width: 600px) {
   .content {
     padding: 6rem 3rem 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about {
+    flex-wrap: wrap;
   }
 }
