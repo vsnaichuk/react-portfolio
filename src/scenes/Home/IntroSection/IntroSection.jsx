@@ -7,7 +7,6 @@ import {
   FaTelegramPlane,
 } from 'react-icons/fa';
 import Tilt from 'react-parallax-tilt';
-import homeMainIcon from '../../../assets/home-main.svg';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const IntroSection = () => {

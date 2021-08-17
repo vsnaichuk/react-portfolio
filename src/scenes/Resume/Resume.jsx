@@ -1,11 +1,13 @@
 import s from './Resume.module.scss';
 import { ReactComponent as FilesIcon } from '../../assets/resume-files.svg';
 import { ReactComponent as DownloadIcon } from '../../assets/download.svg';
+import { useEffect, useRef, useState } from 'react';
 import BaseLayout from '../../layouts/BaseLayout/BaseLayout';
-import { Document, Page, pdfjs } from 'react-pdf';
 import LinerProgress from '../../components/UIElements/LinerProgress/LinerProgress';
 import Button from '../../components/UIElements/Button/Button';
-import { useEffect, useRef, useState } from 'react';
+//react-pdf
+import { Document, Page, pdfjs } from 'react-pdf';
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const resumeLink =
