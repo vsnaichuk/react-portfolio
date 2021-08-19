@@ -112,6 +112,13 @@ export const PROJECTS = [
       site: 'https://shopping-cart-sv.netlify.app/',
       repo: 'https://github.com/vsnaichuk/React-ShoppingCart',
     },
-    technologies: ['#react', '#javascript', '#scss'],
+    technologies: [
+      '#react',
+      '#typescript',
+      '#material-ui',
+      '#styled-components',
+      '#swr',
+      '#fakestoreapi',
+    ],
   },
 ];
