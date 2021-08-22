@@ -3,7 +3,7 @@
   <a href="https://sv-dev.netlify.app/" target="_blank">Sv.dev</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="https://res.cloudinary.com/dx6tl6aa2/image/upload/v1629400033/portfolio/React-portfolio-github-readme_mpeoe4.png" />
+  <img alt="Demo" src="https://res.cloudinary.com/dx6tl6aa2/image/upload/v1629400033/portfolio/promo/React-portfolio-github-readme_mpeoe4.png" />
 </div>
 
 ## Built With
