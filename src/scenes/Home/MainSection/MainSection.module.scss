@@ -40,14 +40,15 @@
 }
 
 .homeMainIcon {
+  display: flex !important;
   width: 40%;
+  min-height: 25rem;
   padding: 0 15px;
-}
 
-.homeMainIcon img {
-  width: 100%;
-  min-width: 280px;
-  height: auto;
+  & > img {
+    min-width: 280px;
+    height: auto;
+  }
 }
 
 .typewriterWrapper {
@@ -58,6 +59,12 @@
 .typewriterCursor {
   font-size: 2.4em;
   color: #b562d6;
+}
+
+@media (max-width: 1225px) {
+  .homeMainIcon {
+    min-height: 19rem;
+  }
 }
 
 @media (max-width: 600px) {

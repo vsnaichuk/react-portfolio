@@ -14,13 +14,16 @@
 @import "theme";
 
 html, body {
-  height: 100%;
-  width: 100%;
   font-size: 16px;
   margin: 0;
   font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
 }
 
 @media (max-width: 600px) {
@@ -97,3 +100,22 @@ fieldset{
   background: rgba(222, 130, 235, 0.911);
   border-radius: 12px;
 }
+
+.lazy-load-image-background.blur {
+  filter: blur(15px);
+}
+
+.lazy-load-image-background.blur.lazy-load-image-loaded {
+  filter: blur(0);
+  transition: filter .3s;
+}
+
+.lazy-load-image-background.blur > img {
+  opacity: 0;
+}
+
+.lazy-load-image-background.blur.lazy-load-image-loaded > img {
+  opacity: 1;
+  transition: opacity .3s;
+}
+

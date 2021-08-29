@@ -5,10 +5,10 @@ import { ReactComponent as ToggleDarkIcon } from '../../assets/toggle-dark.svg';
 import { useThemeContext } from '../../hooks/themeHook/themeHook';
 
 const BtnToggleTheme = ({ className }) => {
-  const { toggle, dark } = useThemeContext();
+  const { dark, toggleTheme } = useThemeContext();
 
   return (
-    <Button addClass={className} onClick={toggle}>
+    <Button addClass={className} onClick={toggleTheme}>
       {dark && <ToggleLightIcon className={s.toggleTheme} />}
       {!dark && <ToggleDarkIcon className={s.toggleTheme} />}
     </Button>

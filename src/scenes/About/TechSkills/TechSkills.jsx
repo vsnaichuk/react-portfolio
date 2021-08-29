@@ -1,23 +1,27 @@
 import s from './TechSkills.module.scss';
-import { CgCPlusPlus } from 'react-icons/cg';
 import {
   DiJavascript1,
   DiReact,
   DiNodejs,
   DiMongodb,
-  DiPython,
   DiGit,
+  DiSass,
 } from 'react-icons/di';
-import { SiPytorch, SiTensorflow, SiFirebase } from 'react-icons/si';
+import {
+  SiTypescript,
+  SiRedux,
+  SiSocketDotIo,
+  SiAmazonaws,
+} from 'react-icons/si';
 
 const TechSkills = () => {
   return (
     <ul className={s.container}>
       <li className={s.techIcon}>
-        <CgCPlusPlus />
+        <DiJavascript1 />
       </li>
       <li className={s.techIcon}>
-        <DiJavascript1 />
+        <SiTypescript />
       </li>
       <li className={s.techIcon}>
         <DiNodejs />
@@ -29,19 +33,19 @@ const TechSkills = () => {
         <DiMongodb />
       </li>
       <li className={s.techIcon}>
-        <DiPython />
+        <DiSass />
       </li>
       <li className={s.techIcon}>
-        <SiPytorch />
+        <SiAmazonaws />
       </li>
       <li className={s.techIcon}>
-        <SiTensorflow />
+        <SiRedux />
+      </li>
+      <li className={s.techIcon}>
+        <SiSocketDotIo />
       </li>
       <li className={s.techIcon}>
         <DiGit />
-      </li>
-      <li className={s.techIcon}>
-        <SiFirebase />
       </li>
     </ul>
   );

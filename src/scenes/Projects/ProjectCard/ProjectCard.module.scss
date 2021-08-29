@@ -30,15 +30,8 @@
     overflow: hidden;
     box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561);
   }
-}
-
-.image {
-  opacity: .8;
-  border-radius: 10px;
-
-  img {
+  & > a {
     width: 100%;
-    height: auto;
   }
 }
 
