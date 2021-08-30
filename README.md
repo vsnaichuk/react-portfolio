@@ -12,7 +12,7 @@
   
   <img src="https://img.shields.io/github/forks/vsnaichuk/React-Portfolio?color=blue" />
   
-  <img alt="Demo" src="https://res.cloudinary.com/dx6tl6aa2/image/upload/v1629400033/portfolio/promo/React-portfolio-github-readme_mpeoe4.png" />
+  <img alt="Demo" src="https://res.cloudinary.com/dx6tl6aa2/image/upload/v1630345819/portfolio/promo/React-portfolio-github-readme-v2_scxxgs.png" />
 </div>
 
 ## Built With
