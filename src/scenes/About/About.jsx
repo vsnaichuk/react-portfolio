@@ -1,6 +1,6 @@
 import s from './About.module.scss';
 import BaseLayout from '../../layouts/BaseLayout/BaseLayout';
-import laptopImg from '../../assets/about-laptop.png';
+import aboutPromoImg from '../../assets/about-promo.svg';
 import AboutTextCard from './AboutTextCard/AboutTextCard';
 import TechSkills from './TechSkills/TechSkills';
 import GithubActivity from './GithubActivity/GithubActivity';
@@ -18,7 +18,7 @@ const About = () => {
           </div>
 
           <div className={s.aboutImg}>
-            <img src={laptopImg} alt="about" />
+            <img src={aboutPromoImg} alt="about" />
           </div>
         </div>
 

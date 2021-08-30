@@ -3,13 +3,12 @@
 .content {
   margin: 0 auto;
   max-width: 1440px;
-  padding: 9rem 9rem 3rem;
+  padding: 9rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   color: var(--theme-color);
   text-align: left;
-  flex-wrap: wrap;
 }
 
 .header {
@@ -41,12 +40,13 @@
 
 .homeMainIcon {
   display: flex !important;
-  width: 40%;
+  width: 37%;
   min-height: 25rem;
+  margin-top: 2rem;
   padding: 0 15px;
 
   & > img {
-    min-width: 280px;
+    min-width: 230px;
     height: auto;
   }
 }
@@ -61,21 +61,14 @@
   color: #b562d6;
 }
 
-@media (max-width: 1225px) {
-  .homeMainIcon {
-    min-height: 19rem;
-  }
-}
 
-@media (max-width: 600px) {
+@media (max-width: 925px) {
   .content {
     padding: 9rem 3rem 1rem;
+    flex-wrap: wrap;
   }
-}
-
-@media (max-width: 475px) {
   .homeMainIcon {
-    width: 100%;
-    padding: 0;
+    justify-content: center;
+    width: 60%;
   }
 }

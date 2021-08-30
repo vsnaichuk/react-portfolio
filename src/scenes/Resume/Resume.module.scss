@@ -48,9 +48,6 @@
 
 
 @media (max-width: 600px) {
-  .content {
-    padding: 9rem 3rem 1rem;
-  }
   .header {
     padding-bottom: 10px;
   }
@@ -64,7 +61,10 @@
   }
 }
 
-@media (max-width: 924px) {
+@media (max-width: 925px) {
+  .content {
+    padding: 9rem 3rem 1rem;
+  }
   .title {
     font-size: 4rem;
   }
