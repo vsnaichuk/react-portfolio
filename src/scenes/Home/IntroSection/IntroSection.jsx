@@ -1,9 +1,14 @@
 import s from './IntroSection.module.scss';
 import avatar from '../../../assets/avatar.svg';
-import { AiFillGithub } from 'react-icons/ai';
+import { AiFillGithub, AiFillYoutube } from 'react-icons/ai';
 import {
   FaFacebookSquare,
   FaLinkedinIn,
+  FaInstagram,
+  FaTwitter,
+  FaYoutube,
+  FaGithub,
+  FaBitbucket,
   FaTelegramPlane,
 } from 'react-icons/fa';
 import Tilt from 'react-parallax-tilt';
@@ -36,8 +41,8 @@ const IntroSection = () => {
             </p>
 
             <p>
-              A passionate Full Stack Software Developer 🚀 <br />I
-              have an experience of building{' '}
+              A passionate Beginner Software Developer 🚀 <br />I
+              am Learning Programming Languages{' '}
               <i>
                 <b className={s.purple}>Web and Mobile</b>
               </i>{' '}
@@ -67,42 +72,54 @@ const IntroSection = () => {
         <ul className={s.socialLinks}>
           <li className={s.socialLink}>
             <a
-              href="https://github.com/vsnaichuk"
+              href="https://github.com/Debanjan-Mondal"
               target="_blank"
               rel="noreferrer"
               className={s.socialIcon}
             >
-              <AiFillGithub />
+              <FaGithub />
             </a>
           </li>
           <li className={s.socialLink}>
             <a
-              href="https://www.facebook.com/Snaychuk"
+              href="https://www.instagram.com/debanjan.m2005/"
               target="_blank"
               rel="noreferrer"
               className={s.socialIcon}
             >
-              <FaFacebookSquare />
+              <FaInstagram />
+            </a>
+          </li>
+
+          {/*<li className={s.socialLink}>
+            <a
+              href="https://bitbucket.org/Debanjan-Mondal/"
+              target="_blank"
+              rel="noreferrer"
+              className={s.socialIcon}
+            >
+              <FaBitbucket />
+            </a>
+          </li>
+           */}
+          <li className={s.socialLink}>
+            <a
+              href="https://www.youtube.com/c/DebanjanMondalChannel"
+              target="_blank"
+              rel="noreferrer"
+              className={s.socialIcon}
+            >
+              <FaYoutube />
             </a>
           </li>
           <li className={s.socialLink}>
             <a
-              href="https://t.me/snaichuk_v"
+              href="https://twitter.com/Debanja68733233"
               target="_blank"
               rel="noreferrer"
               className={s.socialIcon}
             >
-              <FaTelegramPlane />
-            </a>
-          </li>
-          <li className={s.socialLink}>
-            <a
-              href="https://www.linkedin.com/in/volodymyr-snaichuk-74a389124/"
-              target="_blank"
-              rel="noreferrer"
-              className={s.socialIcon}
-            >
-              <FaLinkedinIn />
+              <FaTwitter />
             </a>
           </li>
         </ul>

@@ -2,6 +2,8 @@ import s from './Logo.module.scss';
 import { routes } from '../../routes/BaseRoutes';
 import { Link } from 'react-router-dom';
 
+//const Logo = '../../assets/logo.svg'
+
 const Logo = ({ className }) => {
   return (
     <div className={className}>

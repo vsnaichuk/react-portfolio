@@ -2,8 +2,12 @@ import s from './Footer.module.scss';
 import { AiFillGithub } from 'react-icons/ai';
 import {
   FaFacebookSquare,
+  FaGithub,
+  FaInstagram,
   FaLinkedinIn,
   FaTelegramPlane,
+  FaTwitter,
+  FaYoutube,
 } from 'react-icons/fa';
 
 const Footer = () => {
@@ -14,49 +18,49 @@ const Footer = () => {
     <div className={s.footer}>
       <div className={s.container}>
         <div className={s.copyright}>
-          <h3>Designed and Developed by Snaichuk Volodymyr</h3>
+          <h3>Designed and Developed by Debanjan Mondal</h3>
         </div>
 
         <div className={s.copyright}>
-          <h3>Copyright © {year} SV.dev</h3>
+          <h3>Copyright © {year} D.M</h3>
         </div>
 
         <div className={s.body}>
           <ul className={s.socialIcons}>
             <li>
               <a
-                href="https://github.com/vsnaichuk"
+                href="https://github.com/Debanjan-Mondal"
                 target="_blank"
                 rel="noreferrer"
               >
-                <AiFillGithub />
+                <FaGithub />
               </a>
             </li>
             <li>
               <a
-                href="https://www.facebook.com/Snaychuk"
+                href="https://www.instagram.com/debanjan.m2005/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaFacebookSquare />
+                <FaInstagram />
               </a>
             </li>
             <li>
               <a
-                href="https://t.me/snaichuk_v"
+                href="https://www.youtube.com/c/DebanjanMondalChannel"
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaTelegramPlane />
+                <FaYoutube />
               </a>
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/in/volodymyr-snaichuk-74a389124/"
+                href="https://twitter.com/Debanja68733233"
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaLinkedinIn />
+                <FaTwitter />
               </a>
             </li>
           </ul>
