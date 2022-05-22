@@ -4,9 +4,9 @@
 </h2>
 
 <div align="center">
-  <a href="https://app.fossa.com/projects/git%2Bgithub.com%2FVolodumurSN%2FReact-Portfolio?ref=badge_shield" target="\_parent">
+<!--   <a href="https://app.fossa.com/projects/git%2Bgithub.com%2FVolodumurSN%2FReact-Portfolio?ref=badge_shield" target="\_parent">
     <img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FVolodumurSN%2FReact-Portfolio.svg?type=shield" />
-  </a> 
+  </a>  -->
   
   <img src="https://img.shields.io/github/stars/vsnaichuk/React-Portfolio?color=blue" />
   
