@@ -1,4 +1,6 @@
-import ReactParticles from 'react-particles-js';
+import { useCallback } from 'react';
+import { loadFull } from 'tsparticles';
+import ReactParticles from 'react-tsparticles';
 import {
   DARK_THEME_PARTICLES,
   LIGHT_THEME_PARTICLES,
@@ -8,12 +10,17 @@ import { useThemeContext } from '../../../hooks/themeHook/themeHook';
 const Particles = () => {
   const { dark } = useThemeContext();
 
+  const particlesInit = useCallback(async (engine) => {
+    await loadFull(engine);
+  }, []);
+
   const particles = dark
     ? DARK_THEME_PARTICLES
     : LIGHT_THEME_PARTICLES;
 
   return (
     <ReactParticles
+      init={particlesInit}
       params={{
         particles: particles,
         interactivity: {

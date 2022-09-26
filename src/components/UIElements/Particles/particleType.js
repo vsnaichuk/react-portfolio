@@ -29,17 +29,12 @@ export const LIGHT_THEME_PARTICLES = {
       sync: false,
     },
   },
-  line_linked: {
-    enable_auto: true,
-    distance: 50,
+  links: {
+    enable: true,
     color: '#623686',
-    opacity: 1,
+    distance: 50,
     width: 1,
-    condensed_mode: {
-      enable: false,
-      rotateX: 600,
-      rotateY: 600,
-    },
+    consent: false,
   },
   move: {
     enable: true,
@@ -59,17 +54,14 @@ export const LIGHT_THEME_PARTICLES = {
 
 export const DARK_THEME_PARTICLES = {
   number: {
-    value: 160,
+    value: 100,
     density: {
       enable: true,
-      value_area: 1500,
+      area: 1500,
     },
   },
-  line_linked: {
-    enable: false,
-    opacity: 0.03,
-  },
   move: {
+    enable: true,
     direction: 'right',
     speed: 0.05,
   },
