@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import s from './BtnToggleTheme.module.scss';
 import Button from '../UIElements/Button/Button';
 import { ReactComponent as ToggleLightIcon } from '../../assets/toggle-light.svg';
@@ -7,10 +8,14 @@ import { useThemeContext } from '../../hooks/themeHook/themeHook';
 const BtnToggleTheme = ({ className }) => {
   const { dark, toggleTheme } = useThemeContext();
 
+  const ToggleThemeIcon = useMemo(
+    () => (dark ? ToggleDarkIcon : ToggleLightIcon),
+    [dark],
+  );
+
   return (
     <Button addClass={className} onClick={toggleTheme}>
-      {dark && <ToggleLightIcon className={s.toggleTheme} />}
-      {!dark && <ToggleDarkIcon className={s.toggleTheme} />}
+      <ToggleThemeIcon className={s.toggleTheme} />
     </Button>
   );
 };

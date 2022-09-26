@@ -1,15 +1,20 @@
 import { createContext, useEffect, useState } from 'react';
 
+const DARK_LOCAL_STORAGE_KEY = 'dark';
+
 export const ThemeContext = createContext({
   dark: true,
   toggle: () => {},
 });
 
 export const ThemeProvider = ({ children }) => {
-  const [dark, setDark] = useState(true);
+  const [dark, setDark] = useState(true); // dark by default
 
   const toggleTheme = () => {
-    localStorage.setItem('dark', JSON.stringify(!dark));
+    localStorage.setItem(
+      DARK_LOCAL_STORAGE_KEY,
+      JSON.stringify(!dark),
+    );
     setDark(!dark);
 
     document.body.classList.toggle('dark', !dark);
@@ -17,13 +22,15 @@ export const ThemeProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    const localeDark = JSON.parse(localStorage.getItem('dark'));
+    const localeValue = JSON.parse(
+      localStorage.getItem(DARK_LOCAL_STORAGE_KEY),
+    );
 
-    if (typeof localeDark !== 'boolean')
-      document.body.classList.add(dark ? 'dark' : 'light');
-    else {
-      setDark(localeDark);
-      document.body.classList.add(localeDark ? 'dark' : 'light');
+    if (!localeValue) {
+      document.body.classList.add('dark');
+    } else {
+      setDark(localeValue);
+      document.body.classList.add(localeValue ? 'dark' : 'light');
     }
   }, []);
 

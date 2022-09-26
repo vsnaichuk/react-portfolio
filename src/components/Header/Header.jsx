@@ -1,14 +1,18 @@
 import cx from 'classnames';
 import s from './Header.module.scss';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Header = ({ children }) => {
   const [headerHighlight, setHeaderHighlight] = useState(false);
 
-  const scrollHandler = () => {
-    setHeaderHighlight(window.scrollY >= 20);
-  };
-  window.addEventListener('scroll', scrollHandler);
+  useEffect(() => {
+    const scrollHandler = () => {
+      setHeaderHighlight(window.scrollY >= 20);
+    };
+
+    window.addEventListener('scroll', scrollHandler);
+    return () => window.removeEventListener('scroll', scrollHandler);
+  }, []);
 
   return (
     <div
