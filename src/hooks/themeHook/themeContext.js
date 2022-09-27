@@ -34,7 +34,7 @@ export const ThemeProvider = ({ children }) => {
       localStorage.getItem(DARK_LOCAL_STORAGE_KEY),
     );
 
-    if (typeof localValue === 'undefined') {
+    if (localValue === null) {
       document.body.classList.add('dark');
     } else {
       setDark(localValue);
