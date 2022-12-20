@@ -35,8 +35,8 @@ const ModalProjectCard = () => {
           <h3 className={s.title}>{title}</h3>
 
           <div className={s.technologies}>
-            {technologies.map((tech) => (
-              <span>{tech}</span>
+            {technologies.map((tech, index) => (
+              <span key={index}>{tech}</span>
             ))}
           </div>
         </div>
