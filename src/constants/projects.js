@@ -1,6 +1,74 @@
 export const PROJECTS = [
   {
     id: '1',
+    title: 'Syntho',
+    description:
+      'Syntho is an electronic music education application. Connect with like minded users as you build your own custom profile, communicate and share music via the newsfeed.',
+    image: {
+      src: 'https://res.cloudinary.com/dx6tl6aa2/image/upload/v1671564532/portfolio/projects/Syntho/Screenshot_2022-12-20_at_21.26.17_1_c59hzo.jpg',
+      placeholderSrc:
+        'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzIDIiPjwvc3ZnPg==',
+    },
+    links: {
+      site: 'https://apps.apple.com/us/app/syntho/id1615419392',
+    },
+    technologies: [
+      '#typescript',
+      '#react-native',
+      '#react-native-web',
+      '#mobx-state-tree',
+      '#expo',
+      '#i18next',
+      '#react-navigation',
+      '#sentry',
+    ],
+  },
+  {
+    id: '2',
+    title: 'Minfin - Currency Rates',
+    description:
+      'Minfin Currency - application with all necessary information about currency: from currency rates - to the nearest places where you can exchange currency in your city.',
+    image: {
+      src: 'https://res.cloudinary.com/dx6tl6aa2/image/upload/v1671563302/portfolio/projects/minfin/Screenshot_2022-12-20_at_21.06.43_vl5h6k.jpg',
+      placeholderSrc:
+        'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzIDIiPjwvc3ZnPg==',
+    },
+    links: {
+      site: 'https://apps.apple.com/us/app/minfin-currency-rates/id1574863878',
+    },
+    technologies: [
+      '#typescript',
+      '#react-native',
+      '#mobx-keystone',
+      '#i18next',
+      '#firebase-analytics',
+      '#google-maps',
+    ],
+  },
+  {
+    id: '3',
+    title: 'Fashion app',
+    description:
+      "A react native app with animations made with react-native-reanimated. The app is based on the Outfitr - Fashion UI Kit. Inspired by William Candillon's youtube series.",
+    image: {
+      src: 'https://res.cloudinary.com/dx6tl6aa2/image/upload/v1671562261/portfolio/projects/fashion/Screenshot_2022-12-20_at_20.45.27_peyqly.jpg',
+      placeholderSrc:
+        'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzIDIiPjwvc3ZnPg==',
+    },
+    links: {
+      site: 'https://expo.dev/@v_snaichuk/rn-fashion?serviceType=classic&distribution=expo-go',
+      repo: 'https://github.com/vsnaichuk/fashion-app',
+    },
+    technologies: [
+      '#typescript',
+      '#react-native',
+      '#expo',
+      '#react-native-reanimated',
+      '#react-navigation',
+    ],
+  },
+  {
+    id: '4',
     title: 'Apiko Marketplace',
     description:
       'An online marketplace made with React. The project was developed on 8th Apiko Intensive.',
@@ -24,7 +92,7 @@ export const PROJECTS = [
     ],
   },
   {
-    id: '2',
+    id: '5',
     title: 'Places App',
     description:
       'A MERN app to let users share their experience of places along with Details. It is user friendly and can be useful to many others.',
@@ -50,7 +118,7 @@ export const PROJECTS = [
     ],
   },
   {
-    id: '3',
+    id: '6',
     title: 'eCommerce Mobile App',
     description:
       'A Mobile eCommerce application built with React Native that includes cart functionality, push notifications, user authentication and user orders',
@@ -75,7 +143,7 @@ export const PROJECTS = [
     ],
   },
   {
-    id: '4',
+    id: '7',
     title: 'Places Mobile App',
     description:
       'A Mobile application for sharing places that people visit from all over the world. Uses React Native, TypeScript, MobX and Native Device Features',
@@ -99,7 +167,7 @@ export const PROJECTS = [
     ],
   },
   {
-    id: '5',
+    id: '8',
     title: 'Shopping Cart',
     description:
       'Simple eCommerce cart application built with React and TypeScript. Uses SWR hook to fetch the data from the API and Styled Components',
