@@ -12,28 +12,28 @@ const NavLinks = () => {
   return (
     <ul className={s.navBar}>
       <li>
-        <NavLink to={routes.HOME} activeClassName={s.active} exact>
+        <NavLink to={routes.HOME} end>
           <AiOutlineHome />
           Home
         </NavLink>
       </li>
 
       <li>
-        <NavLink to={routes.ABOUT} activeClassName={s.active}>
+        <NavLink to={routes.ABOUT}>
           <AiOutlineUser />
           About
         </NavLink>
       </li>
 
       <li>
-        <NavLink to={routes.PROJECTS} activeClassName={s.active}>
+        <NavLink to={routes.PROJECTS}>
           <AiOutlineFundProjectionScreen />
           Projects
         </NavLink>
       </li>
 
       <li>
-        <NavLink to={routes.RESUME} activeClassName={s.active}>
+        <NavLink to={routes.RESUME}>
           <CgFileDocument />
           Resume
         </NavLink>
