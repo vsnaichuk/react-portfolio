@@ -21,34 +21,31 @@ const IntroSection = () => {
 
           <div className={s.description}>
             <p>
-              I fell in love with programming and I have at least
-              learnt something, I think… 🤷‍♂️
+              I'm a React Native Developer with more than two years of
+              experience <br />
+              creating mobile apps for the iOS, Android, and Web
+              platforms.
+            </p>
+
+            <p>
+              My skills include proficiency in{' '}
+              <i>
+                <b className={s.purple}>
+                  TypeScript, React, React Native,
+                </b>
+              </i>
+              <br />
+              and other relevant technologies. I have experience in
+              integrating various <br />
+              third-party libraries, API integration, push
+              notifications and analytics.
             </p>
 
             <p>
               My field of Interest's are building new
               <i>
-                <b className={s.purple}>
-                  {' '}
-                  Web Technologies and Products
-                </b>
+                <b className={s.purple}> Technologies and Products</b>
               </i>
-            </p>
-
-            <p>
-              A passionate Full Stack Software Developer 🚀 <br />I
-              have an experience of building{' '}
-              <i>
-                <b className={s.purple}>Web and Mobile</b>
-              </i>{' '}
-              applications with
-              <br />
-              <i>
-                <b className={s.purple}>
-                  JavaScript, Reactjs, Nodejs, React Native
-                </b>
-              </i>{' '}
-              and some other cool libraries
             </p>
           </div>
         </div>

@@ -47,9 +47,9 @@ const data = [
   },
   {
     id: '3',
-    title: 'Fashion app',
+    title: 'Outfitr',
     description:
-      "A react native app with animations made with react-native-reanimated. The app is based on the Outfitr - Fashion UI Kit. Inspired by William Candillon's youtube series.",
+      'A react native app with animations made with react-native-reanimated. The app is based on the Outfitr - Fashion UI Kit.',
     image: {
       src: 'https://res.cloudinary.com/dx6tl6aa2/image/upload/v1671562261/portfolio/projects/fashion/Screenshot_2022-12-20_at_20.45.27_peyqly.jpg',
       placeholderSrc:

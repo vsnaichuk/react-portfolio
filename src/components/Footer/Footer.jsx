@@ -7,18 +7,14 @@ import {
 } from 'react-icons/fa';
 
 const Footer = () => {
-  let date = new Date();
-  let year = date.getFullYear();
+  // let date = new Date();
+  // let year = date.getFullYear();
 
   return (
     <div className={s.footer}>
       <div className={s.container}>
         <div className={s.copyright}>
-          <h3>Designed and Developed by Snaichuk Volodymyr</h3>
-        </div>
-
-        <div className={s.copyright}>
-          <h3>© {year} Sv.dev</h3>
+          <h3>Made with ❤️ by Snaichuk Volodymyr</h3>
         </div>
 
         <div className={s.body}>

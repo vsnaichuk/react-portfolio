@@ -32,7 +32,7 @@ export const LIGHT_THEME_PARTICLES = {
   links: {
     enable: true,
     color: '#623686',
-    distance: 50,
+    distance: 70,
     width: 1,
     consent: false,
   },
