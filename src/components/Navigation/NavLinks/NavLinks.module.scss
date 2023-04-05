@@ -56,14 +56,9 @@
 
 @media (min-width: 768px) {
   .navBar a {
-    &:hover{
+    &:hover, &:active, &[class="active"] {
       &:after {
         max-width: 100%;
-      }
-    }
-    &.active {
-      &:after {
-        max-width: 0;
       }
     }
 
