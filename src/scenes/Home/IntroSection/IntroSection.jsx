@@ -21,7 +21,7 @@ const IntroSection = () => {
 
           <div className={s.description}>
             <p>
-              I'm a React Native Developer with more than two years of
+              I'm a React Native Developer with two years of
               experience <br />
               creating mobile apps for the iOS, Android, and Web
               platforms.
