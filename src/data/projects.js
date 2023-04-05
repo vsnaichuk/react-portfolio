@@ -1,4 +1,4 @@
-export const PROJECTS = [
+const data = [
   {
     id: '1',
     title: 'Syntho',
@@ -190,3 +190,5 @@ export const PROJECTS = [
     ],
   },
 ];
+
+export default data;
