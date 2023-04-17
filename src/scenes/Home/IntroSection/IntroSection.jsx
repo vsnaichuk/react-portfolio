@@ -68,6 +68,7 @@ const IntroSection = () => {
               target="_blank"
               rel="noreferrer"
               className={s.socialIcon}
+              aria-label="github"
             >
               <AiFillGithub />
             </a>
@@ -78,6 +79,7 @@ const IntroSection = () => {
               target="_blank"
               rel="noreferrer"
               className={s.socialIcon}
+              aria-label="facebook"
             >
               <FaFacebookSquare />
             </a>
@@ -88,6 +90,7 @@ const IntroSection = () => {
               target="_blank"
               rel="noreferrer"
               className={s.socialIcon}
+              aria-label="telegram"
             >
               <FaTelegramPlane />
             </a>
@@ -98,6 +101,7 @@ const IntroSection = () => {
               target="_blank"
               rel="noreferrer"
               className={s.socialIcon}
+              aria-label="linkedin"
             >
               <FaLinkedinIn />
             </a>

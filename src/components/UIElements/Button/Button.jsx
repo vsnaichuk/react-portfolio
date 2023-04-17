@@ -11,6 +11,7 @@ const Button = ({
   target,
   style,
   addClass,
+  label
 }) => {
   if (href) {
     return (
@@ -32,6 +33,7 @@ const Button = ({
       type={type}
       onClick={onClick}
       disabled={disabled}
+      aria-label={label}
     >
       {children}
     </button>

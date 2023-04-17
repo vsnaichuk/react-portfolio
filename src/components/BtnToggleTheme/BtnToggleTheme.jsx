@@ -14,7 +14,11 @@ const BtnToggleTheme = ({ className }) => {
   );
 
   return (
-    <Button addClass={className} onClick={toggleTheme}>
+    <Button
+      addClass={className}
+      onClick={toggleTheme}
+      label="theme toggle"
+    >
       <ToggleThemeIcon className={s.toggleTheme} />
     </Button>
   );

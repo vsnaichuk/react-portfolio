@@ -24,6 +24,7 @@ const Footer = () => {
                 href="https://github.com/vsnaichuk"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="github"
               >
                 <AiFillGithub />
               </a>
@@ -33,6 +34,7 @@ const Footer = () => {
                 href="https://www.facebook.com/Snaychuk"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="facebook"
               >
                 <FaFacebookSquare />
               </a>
@@ -42,6 +44,7 @@ const Footer = () => {
                 href="https://t.me/snaichuk_v"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="TelegramPlane"
               >
                 <FaTelegramPlane />
               </a>
@@ -51,6 +54,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/volodymyr-snaichuk-74a389124/"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="linkedin"
               >
                 <FaLinkedinIn />
               </a>
