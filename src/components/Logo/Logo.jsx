@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Logo = ({ className }) => {
   return (
     <div className={className}>
-      <Link to={routes.HOME}>
+      <Link to={routes.HOME} aria-label="site logo">
         <svg
           fill={s.logoPrimary}
           viewBox="7.214 3.885 305.772 87.68"

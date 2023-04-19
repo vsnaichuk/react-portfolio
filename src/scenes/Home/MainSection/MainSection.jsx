@@ -33,6 +33,8 @@ const MainSection = () => {
         effect="blur"
         src={homeMainIcon}
         wrapperClassName={s.homeMainIcon}
+        width="396"
+        height="400"
       />
     </section>
   );
