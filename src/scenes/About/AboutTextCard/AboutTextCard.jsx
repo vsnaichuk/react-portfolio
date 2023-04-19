@@ -41,7 +41,7 @@ const AboutTextCard = () => {
           marginTop: '1rem',
         }}
       >
-        "Strive to build things that make a difference!"{' '}
+        "Learn, grow, share, repeat."
       </p>
     </div>
   );
