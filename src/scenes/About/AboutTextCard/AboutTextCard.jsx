@@ -33,16 +33,6 @@ const AboutTextCard = () => {
           <ImPointRight /> Travelling
         </li>
       </ul>
-
-      <p
-        style={{
-          color: 'rgb(155 126 172)',
-          textAlign: 'center',
-          marginTop: '1rem',
-        }}
-      >
-        "Learn, grow, share, repeat."
-      </p>
     </div>
   );
 };
