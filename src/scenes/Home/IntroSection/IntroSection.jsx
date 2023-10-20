@@ -1,11 +1,7 @@
 import s from './IntroSection.module.scss';
 import avatar from '../../../assets/avatar.svg';
 import { AiFillGithub } from 'react-icons/ai';
-import {
-  FaFacebookSquare,
-  FaLinkedinIn,
-  FaTelegramPlane,
-} from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
 import Tilt from 'react-parallax-tilt';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
@@ -15,38 +11,34 @@ const IntroSection = () => {
       <div className={s.introduction}>
         <div className={s.introductionText}>
           <h1 className={s.title}>
-            LET ME <span className={s.purple}> INTRODUCE </span>{' '}
-            MYSELF
+            Me <span className={s.purple}> presento </span>
           </h1>
 
           <div className={s.description}>
             <p>
-              I'm a React Native Developer with two years of
-              experience <br />
-              creating mobile apps for the iOS, Android, and Web
-              platforms.
+              Soy Full Stack Developer recibido en Henry <br /> con
+              background en administración.
             </p>
 
             <p>
-              My skills include proficiency in{' '}
+              Mis tech skills son{' '}
               <i>
                 <b className={s.purple}>
-                  TypeScript, React, React Native,
+                  HTML, CSS, Javascript, React, Redux, NodeJS,
+                  Sequelize, Java, PostgreSQL,
                 </b>
               </i>
               <br />
-              and other relevant technologies. I have experience in
-              integrating various <br />
-              third-party libraries, API integration, push
-              notifications and analytics.
+              y otras tecnologías. Tengo experiencia en proyectos
+              académicos. <br />
             </p>
 
-            <p>
+            {/* <p>
               My field of Interest's are building new
               <i>
                 <b className={s.purple}> Technologies and Products</b>
               </i>
-            </p>
+            </p> */}
           </div>
         </div>
 
@@ -56,15 +48,15 @@ const IntroSection = () => {
       </div>
 
       <div className={s.introSocial}>
-        <h1>FIND ME ON</h1>
+        <h1>Contacto</h1>
         <p>
-          Feel free to <span className={s.purple}>connect </span>with
-          me
+          Sientanse libres de
+          <span className={s.purple}> conectar </span> conmigo.
         </p>
         <ul className={s.socialLinks}>
           <li className={s.socialLink}>
             <a
-              href="https://github.com/vsnaichuk"
+              href="https://github.com/JFReales"
               target="_blank"
               rel="noreferrer"
               className={s.socialIcon}
@@ -73,7 +65,7 @@ const IntroSection = () => {
               <AiFillGithub />
             </a>
           </li>
-          <li className={s.socialLink}>
+          {/* <li className={s.socialLink}>
             <a
               href="https://www.facebook.com/Snaychuk"
               target="_blank"
@@ -94,10 +86,10 @@ const IntroSection = () => {
             >
               <FaTelegramPlane />
             </a>
-          </li>
+          </li> */}
           <li className={s.socialLink}>
             <a
-              href="https://www.linkedin.com/in/volodymyr-snaichuk-74a389124/"
+              href="https://www.linkedin.com/in/juan-francisco-reales/"
               target="_blank"
               rel="noreferrer"
               className={s.socialIcon}

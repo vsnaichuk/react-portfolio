@@ -32,12 +32,12 @@ const NavLinks = () => {
         </NavLink>
       </li>
 
-      <li>
+      {/* <li>
         <NavLink to={routes.RESUME}>
           <CgFileDocument />
           Resume
         </NavLink>
-      </li>
+      </li> */}
     </ul>
   );
 };
