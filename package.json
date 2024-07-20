@@ -5,7 +5,7 @@
   "dependencies": {
     "classnames": "^2.3.2",
     "modern-normalize": "^1.1.0",
-    "node-sass": "^8.0.0",
+    "node-sass": "9.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-github-calendar": "^3.3.0",
