@@ -42,14 +42,16 @@ const ModalProjectCard = () => {
         </div>
 
         <div className={s.cardFooter}>
-          <Button
-            style={{ width: '12rem' }}
-            className="primary"
-            href={links.site}
-            target="_blank"
-          >
-            <BiLinkExternal /> &nbsp; View project
-          </Button>
+          {!!links.site && (
+            <Button
+              style={{ width: '12rem' }}
+              className="primary"
+              href={links.site}
+              target="_blank"
+            >
+              <BiLinkExternal /> &nbsp; View project
+            </Button>
+          )}
 
           {!!links.repo && (
             <Button
