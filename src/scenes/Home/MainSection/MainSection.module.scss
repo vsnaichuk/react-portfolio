@@ -1,14 +1,14 @@
 @import '../../../styles/keyframes';
 
 .content {
-  margin: 0 auto;
   max-width: 1440px;
-  padding: 9rem;
+  padding: 9rem 4rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   color: var(--theme-color);
   text-align: left;
+  align-self: center;
 }
 
 .header {
@@ -19,14 +19,6 @@
   font-size: 2.4rem;
 }
 
-.wave {
-  animation-name: wave;
-  animation-duration: 2.1s;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
-  display: inline-block;
-}
-
 .mainTitle {
   font-size: 2.5rem;
   word-spacing: .3rem;
@@ -35,7 +27,6 @@
 .mainName {
   color: var(--txt-sec-darcker);
   text-transform: uppercase;
-
 }
 
 .homeMainIcon {
@@ -49,6 +40,22 @@
     min-width: 230px;
     height: auto;
   }
+}
+
+.spacer {
+  width: 4rem
+}
+
+.handIcon {
+  width: 48px;
+  margin-top: -16px;
+  margin-left: 8px;
+}
+
+.greetingContainer {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
 }
 
 .typewriterWrapper {
@@ -66,9 +73,13 @@
   .content {
     padding: 9rem 3rem 1rem;
     flex-wrap: wrap;
+    align-self: stretch;
   }
   .homeMainIcon {
     justify-content: center;
     width: 60%;
+  }
+  .spacer {
+    display: none;
   }
 }

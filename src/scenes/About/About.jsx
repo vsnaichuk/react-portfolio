@@ -1,9 +1,9 @@
-import s from './About.module.scss';
-import BaseLayout from '../../layouts/BaseLayout/BaseLayout';
 import aboutPromoImg from '../../assets/about-promo.svg';
+import BaseLayout from '../../layouts/BaseLayout/BaseLayout';
+import s from './About.module.scss';
 import AboutTextCard from './AboutTextCard/AboutTextCard';
-import TechSkills from './TechSkills/TechSkills';
 import GithubActivity from './GithubActivity/GithubActivity';
+import TechSkills from './TechSkills/TechSkills';
 
 const About = () => {
   return (
@@ -12,7 +12,7 @@ const About = () => {
         <div className={s.about}>
           <div className={s.aboutDescription}>
             <h1 className={s.title}>
-              Know Who <b className={s.purple}>I'M</b>
+              Learn More <b className={s.purple}>About Me</b>
             </h1>
             <AboutTextCard />
           </div>
@@ -23,14 +23,17 @@ const About = () => {
         </div>
 
         <h2 className={s.skills}>
-          Professional <b className={s.purple}>Skills</b>
+          My <b className={s.purple}>Skills</b>
         </h2>
         <TechSkills />
 
-        <h2 className={s.githubActivity}>
-          Days I <b className={s.purple}>Code</b>
-        </h2>
-        <GithubActivity />
+        <a href='https://github.com/vsnaichuk'>
+          <h2 className={s.githubActivity}>
+            My <b className={s.purple}>Coding</b> Journey
+          </h2>
+        
+          <GithubActivity />
+        </a>
       </div>
     </BaseLayout>
   );

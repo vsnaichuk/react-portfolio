@@ -1,27 +1,16 @@
-//wave
-@keyframes wave {
+@keyframes preloader {
   0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(14deg);
-  }
-  20% {
-    transform: rotate(-8deg);
-  }
-  30% {
-    transform: rotate(14deg);
-  }
-  40% {
-    transform: rotate(-4deg);
-  }
-  50% {
-    transform: rotate(10deg);
-  }
-  60% {
-    transform: rotate(0deg);
+    top: 56px; 
+    left: 56px;
+    width: 0;
+    height: 0;
+    opacity: 1;
   }
   100% {
-    transform: rotate(0deg);
+    top: -2px;  
+    left: -2px; 
+    width: 116px; 
+    height: 116px;
+    opacity: 0;
   }
 }

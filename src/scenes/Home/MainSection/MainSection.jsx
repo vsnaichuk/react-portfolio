@@ -1,15 +1,22 @@
-import s from './MainSection.module.scss';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import handIcon from '../../../assets/hand.png';
 import homeMainIcon from '../../../assets/home-main.svg';
 import Typewriter from '../../../components/UIElements/Typewriter/Typewriter';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import s from './MainSection.module.scss';
 
 const MainSection = () => {
   return (
     <section className={s.content}>
       <div className={s.header}>
-        <h2 style={{ paddingBottom: 15 }} className={s.title}>
-          Hi There! <span className={s.wave}>👋🏻</span>
-        </h2>
+        <div className={s.greetingContainer}>
+          <h2 className={s.title}>
+            Greetings!
+          </h2>
+          <img 
+            src={handIcon} 
+            className={s.handIcon} 
+          />
+        </div>
 
         <h1 className={s.mainTitle}>
           I'M
@@ -27,6 +34,8 @@ const MainSection = () => {
           />
         </div>
       </div>
+
+      <div className={s.spacer} />
 
       <LazyLoadImage
         alt="home-img"

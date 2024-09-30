@@ -1,5 +1,4 @@
 import s from './AboutTextCard.module.scss';
-import { ImPointRight } from 'react-icons/im';
 
 const AboutTextCard = () => {
   return (
@@ -16,18 +15,18 @@ const AboutTextCard = () => {
         Master's degree in Project Management from Ternopil Academy.
         <br />
         <br />
-        Apart from coding, some other activities that I love to do!
+        My hobbies beyond programming:
       </p>
 
-      <ul>
+      <ul style={{ marginLeft: 14 }}>
         <li className={s.aboutActivity}>
-          <ImPointRight /> Playing Games
+          - Playing Games
         </li>
         <li className={s.aboutActivity}>
-          <ImPointRight /> Reading
+          - Reading
         </li>
         <li className={s.aboutActivity}>
-          <ImPointRight /> Travelling
+          - Travelling
         </li>
       </ul>
     </div>

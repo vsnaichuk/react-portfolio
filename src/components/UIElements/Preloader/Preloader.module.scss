@@ -1,3 +1,5 @@
+@import '../../../styles/keyframes';
+
 .preloader {
   position: fixed;
   top: 0;
@@ -6,7 +8,26 @@
   height: 100%;
   z-index: 999999;
   background-color: var(--preloader);
-  background-image: url(../../../assets/pre.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerPreloader {
+  display: inline-block;
+  position: relative;
+  width: 128px;
+  height: 128px;
+}
+
+.innerPreloader div {
+  position: absolute;
+  background: #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: preloader 1.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.innerPreloader div:nth-child(2) {
+  animation-delay: -.7s;
 }

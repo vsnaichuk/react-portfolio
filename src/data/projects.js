@@ -27,6 +27,31 @@ const data = [
   },
   {
     id: '2',
+    title: 'React Native Yoco',
+    description:
+      'Core maintainer and contributor of React Native native module for Yoco SDK. It allows app developers to integrate with Yoco card machines to accept in-person payments from within their application.',
+    image: {
+      src: "https://res.cloudinary.com/dx6tl6aa2/image/upload/v1727717856/portfolio/projects/react-native-yoco_b3bjph.png",
+      placeholderSrc:
+        'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzIDIiPjwvc3ZnPg==',
+    },
+    links: {
+      repo: 'https://github.com/tolypash/react-native-yoco',
+    },
+    technologies: [
+      '#react-native',
+      '#typescript',
+      '#swift',
+      '#kotlin',
+      '#expo modules api',
+      '#turbo modules',
+      '#npm',
+      '#payments',
+      '#sdk'
+    ],
+  },
+  {
+    id: '3',
     title: 'Syntho',
     description:
       'Syntho is an electronic music education application. Connect with like minded users as you build your own custom profile, communicate and share music via the newsfeed.',
@@ -50,7 +75,7 @@ const data = [
     ],
   },
   {
-    id: '3',
+    id: '4',
     title: 'Minfin - Currency Rates',
     description:
       'Minfin Currency - application with all necessary information about currency: from currency rates - to the nearest places where you can exchange currency in your city.',
@@ -72,7 +97,7 @@ const data = [
     ],
   },
   {
-    id: '4',
+    id: '5',
     title: 'Apiko Marketplace',
     description:
       'An online marketplace made with React. The project was developed on 8th Apiko Intensive.',
@@ -95,7 +120,7 @@ const data = [
     ],
   },
   {
-    id: '5',
+    id: '6',
     title: 'eCommerce Mobile App',
     description:
       'A Mobile eCommerce application built with React Native that includes cart functionality, push notifications, user authentication and user orders',
@@ -116,52 +141,6 @@ const data = [
       '#nodejs',
       '#express',
       '#mongodb',
-    ],
-  },
-  {
-    id: '6',
-    title: 'Places Mobile App',
-    description:
-      'A Mobile application for sharing places that people visit from all over the world. Uses React Native, TypeScript, MobX and Native Device Features',
-    image: {
-      src: 'https://res.cloudinary.com/dx6tl6aa2/image/upload/v1628348073/portfolio/projects/rn-places/rn-places-lg_ljyikm.jpg',
-      placeholderSrc:
-        'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzIDIiPjwvc3ZnPg==',
-    },
-    links: {
-      repo: 'https://github.com/vsnaichuk/RN-places',
-    },
-    technologies: [
-      '#react-native',
-      '#typescript',
-      '#expo',
-      '#mobx',
-      '#sqlite',
-      '#react-native-maps',
-      '#expo-location',
-    ],
-  },
-  {
-    id: '7',
-    title: 'Shopping Cart',
-    description:
-      'Simple eCommerce cart application built with React and TypeScript. Uses SWR hook to fetch the data from the API and Styled Components',
-    image: {
-      src: 'https://res.cloudinary.com/dx6tl6aa2/image/upload/v1628348073/portfolio/projects/react-shop-cart/rn-shop-cart-lg_w3qxn6.jpg',
-      placeholderSrc:
-        'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzIDIiPjwvc3ZnPg==',
-    },
-    links: {
-      site: 'https://shopping-cart-sv.netlify.app/',
-      repo: 'https://github.com/vsnaichuk/React-ShoppingCart',
-    },
-    technologies: [
-      '#react',
-      '#typescript',
-      '#material-ui',
-      '#styled-components',
-      '#swr',
-      '#fakestoreapi',
     ],
   },
 ];

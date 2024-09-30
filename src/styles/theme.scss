@@ -28,30 +28,27 @@
 }
 
 .dark {
-  --txt: #fff;
-  --txt-secondary: #cd5ff8;
-  --txt-sec-darcker: #cd5ff8;
-  --bg-layout-home: linear-gradient(to left, RGB(27 20 41), RGB(20 15 35));
-  --bg-home-section-main: linear-gradient(to bottom left, rgba(17, 16, 16, 0.678), rgba(12, 10, 22, 0.863)), url(../assets/home-bg.jpg);
-  --bg-layout-base: #100D19;
-  --bg-primary: #181a27;
-  --bg: #623686;
-  --bg-active: rgba(109,32,197,.84);
-  --bg-header: rgba(33,32,56,0.84);
-  --bg-footer: #0a0416;
-  --backdrop: rgba(0, 0, 0, 0.75);
-  --nav-active: #c95bf5;
-  --border-primary: #8a49a8;
-  --logo-primary: #ce5ff8;
-  --social-icon: #700c86;
-  --social-shadow: #801f95;
-  --preloader: #0c0513;
-  --bg-modal: #100D19;
-  --modal-border: 1px solid rgba(0,0,0,.125);
-  --modal-close: #623686;
-  --modal-close-icon: #fff;
-  --drawer-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-  --btn-primary-txt: #fff;
-  --tags-txt: #fff;
-  --toggle-theme: #fff;
+  --txt: #e4e1ff; 
+  --txt-secondary: #bb86fc; 
+  --txt-sec-darker: #9c47f5; 
+  --bg-layout-home: linear-gradient(to left, RGB(50, 34, 66), RGB(35, 23, 59));
+  --bg-home-section-main: linear-gradient(to bottom left, rgba(40, 32, 62, 0.7), rgba(25, 20, 45, 0.85)), url(../assets/home-bg.jpg); 
+  --bg-layout-base: linear-gradient(to left, RGB(40, 24, 56), RGB(25, 13, 49));
+  --bg-primary: linear-gradient(to left, RGB(50, 34, 66), RGB(35, 23, 59));
+  --bg: RGB(33, 24, 56);
+  --backdrop: rgba(10, 5, 25, 0.75);
+  --nav-active: #d87cff; 
+  --border-primary: #a84df8; 
+  --logo-primary: #d774ff; 
+  --social-icon: #9f30b7; 
+  --social-shadow: #a542d6; 
+  --preloader: RGB(33, 24, 56);
+  --bg-modal: RGB(33, 24, 56); 
+  --modal-border: 1px solid rgba(255, 255, 255, 0.15); 
+  --modal-close: RGB(35, 23, 59); 
+  --modal-close-icon: #fff; 
+  --drawer-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); 
+  --btn-primary-txt: #fff; 
+  --tags-txt: #fff; 
+  --toggle-theme: #fff; 
 }
