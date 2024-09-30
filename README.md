@@ -8,7 +8,7 @@
     <img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FVolodumurSN%2FReact-Portfolio.svg?type=shield" />
   </a>  -->
   
-  <img alt="Demo" src="https://res.cloudinary.com/dx6tl6aa2/image/upload/v1727722454/portfolio/promo/promo-2024_wvune1.png" />
+  <img alt="Demo" src="https://res.cloudinary.com/dx6tl6aa2/image/upload/v1727730717/portfolio/promo/promo-2024_jfnfwo.png" />
 </div>
 
 ## Built With
