@@ -1,6 +1,6 @@
-import s from './Logo.module.scss';
-import { routes } from '../../routes/BaseRoutes';
 import { Link } from 'react-router-dom';
+import { routes } from '../../routes/RootRoutes';
+import s from './Logo.module.scss';
 
 const Logo = ({ className }) => {
   return (

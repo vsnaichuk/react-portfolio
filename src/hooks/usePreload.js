@@ -11,7 +11,7 @@ export const usePreload = (ref, preloadCallback) => {
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     if (ref.current) {
@@ -22,4 +22,4 @@ export const usePreload = (ref, preloadCallback) => {
       if (ref.current) observer.unobserve(ref.current);
     };
   }, [ref, preloadCallback]);
-}
+};
