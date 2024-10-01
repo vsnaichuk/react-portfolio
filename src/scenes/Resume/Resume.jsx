@@ -1,10 +1,10 @@
-import s from './Resume.module.scss';
-import { ReactComponent as FilesIcon } from '../../assets/resume-files.svg';
-import { ReactComponent as DownloadIcon } from '../../assets/download.svg';
 import { useEffect, useRef, useState } from 'react';
-import BaseLayout from '../../layouts/BaseLayout/BaseLayout';
-import LinerProgress from '../../components/UIElements/LinerProgress/LinerProgress';
+import DownloadIcon from '../../assets/download.svg?react';
+import FilesIcon from '../../assets/resume-files.svg?react';
 import Button from '../../components/UIElements/Button/Button';
+import LinerProgress from '../../components/UIElements/LinerProgress/LinerProgress';
+import BaseLayout from '../../layouts/BaseLayout/BaseLayout';
+import s from './Resume.module.scss';
 //react-pdf
 import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
