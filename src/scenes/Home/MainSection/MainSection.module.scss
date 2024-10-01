@@ -11,22 +11,34 @@
   align-self: center;
 }
 
-.header {
-}
+.header {}
 
 .title {
   padding-left: .2rem;
   font-size: 2.4rem;
+}
+.greetingContainer {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+}
+.handIcon {
+  width: 48px;
+  margin-top: -16px;
+  margin-left: 8px;
 }
 
 .mainTitle {
   font-size: 2.5rem;
   word-spacing: .3rem;
 }
-
 .mainName {
   color: var(--txt-sec-darcker);
   text-transform: uppercase;
+}
+
+.spacer {
+  width: 4rem
 }
 
 .homeMainIcon {
@@ -42,23 +54,12 @@
   }
 }
 
-.spacer {
-  width: 4rem
+.typewriter div {
+  padding-top: 50px;
+  margin-bottom: 24px;
+  height: 85px
 }
-
-.handIcon {
-  width: 48px;
-  margin-top: -16px;
-  margin-left: 8px;
-}
-
-.greetingContainer {
-  display: flex;
-  align-items: center;
-  padding-bottom: 15px;
-}
-
-.typewriterWrapper {
+.typewriterInner {
   font-size: 2.2em;
   color: var(--txt-secondary);
   font-weight: 600;
@@ -81,5 +82,17 @@
   }
   .spacer {
     display: none;
+  }
+}
+
+@media (max-width: 625px) {
+  .header {
+    align-self: center;
+    text-align: center
+  }
+  .greetingContainer {
+    justify-content: center;
+    padding-left: 24px;
+    padding-bottom: 20px;
   }
 }

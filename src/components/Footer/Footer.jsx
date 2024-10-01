@@ -1,10 +1,8 @@
+import { AiFillGithub } from '@react-icons/all-files/ai/AiFillGithub';
+import { FaFacebookSquare } from '@react-icons/all-files/fa/FaFacebookSquare';
+import { FaLinkedinIn } from '@react-icons/all-files/fa/FaLinkedinIn';
+import { FaTelegramPlane } from '@react-icons/all-files/fa/FaTelegramPlane';
 import s from './Footer.module.scss';
-import { AiFillGithub } from 'react-icons/ai';
-import {
-  FaFacebookSquare,
-  FaLinkedinIn,
-  FaTelegramPlane,
-} from 'react-icons/fa';
 
 const Footer = () => {
   // let date = new Date();

@@ -44,7 +44,7 @@
 
 .technologies > span {
   display: inline-block;
-  background-color: RGB(129 72 144 / 56%);
+  background-color: var(--tags);
   border-style: solid;
   border-color: transparent;
   border-width: 1px;

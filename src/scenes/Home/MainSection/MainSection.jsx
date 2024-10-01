@@ -23,13 +23,13 @@ const MainSection = () => {
           <strong className={s.mainName}> SNAICHUK VOLODYMYR</strong>
         </h1>
 
-        <div style={{ paddingTop: 50 }}>
+        <div className={s.typewriter}>
           <Typewriter
             strings={[
               'Continuously Learning',
               'React Native Developer',
             ]}
-            wrapperClassName={s.typewriterWrapper}
+            wrapperClassName={s.typewriterInner}
             cursorClassName={s.typewriterCursor}
           />
         </div>

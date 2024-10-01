@@ -1,43 +1,52 @@
-import s from './NavLinks.module.scss';
-import {
-  AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  AiOutlineUser,
-} from 'react-icons/ai';
-import { CgFileDocument } from 'react-icons/cg';
-import { routes } from '../../../routes/BaseRoutes';
+import { AiOutlineFundProjectionScreen } from '@react-icons/all-files/ai/AiOutlineFundProjectionScreen';
+import { AiOutlineHome } from '@react-icons/all-files/ai/AiOutlineHome';
+import { AiOutlineUser } from '@react-icons/all-files/ai/AiOutlineUser';
+import { CgFileDocument } from '@react-icons/all-files/cg/CgFileDocument';
+import { useRef } from "react";
 import { NavLink } from 'react-router-dom';
+import { usePreload } from '../../../hooks/usePreload';
+import { routes as r } from '../../../routes/BaseRoutes';
+import s from './NavLinks.module.scss';
+
+const scenes = {
+  Home: () => import('../../../scenes/Home/Home'),
+  About: () => import('../../../scenes/About/About'),
+  Projects: () => import('../../../scenes/Projects/Projects'),
+  Resume: () => import('../../../scenes/Resume/Resume'),
+} 
+
+const icons = {
+  Home: <AiOutlineHome />,
+  About: <AiOutlineUser />,
+  Projects: <AiOutlineFundProjectionScreen />,
+  Resume: <CgFileDocument />
+}
+
+const Link = (props) => {
+  const ref = useRef();
+  usePreload(ref, props.scene)
+  return (
+    <NavLink ref={ref} to={props.to} end={props.end}>
+      {props.icon || null}
+      {props.name}
+    </NavLink>
+  )
+}
 
 const NavLinks = () => {
   return (
     <ul className={s.navBar}>
-      <li>
-        <NavLink to={routes.HOME} end>
-          <AiOutlineHome />
-          Home
-        </NavLink>
-      </li>
-
-      <li>
-        <NavLink to={routes.ABOUT}>
-          <AiOutlineUser />
-          About
-        </NavLink>
-      </li>
-
-      <li>
-        <NavLink to={routes.PROJECTS}>
-          <AiOutlineFundProjectionScreen />
-          Projects
-        </NavLink>
-      </li>
-
-      <li>
-        <NavLink to={routes.RESUME}>
-          <CgFileDocument />
-          Resume
-        </NavLink>
-      </li>
+      {Object.entries(scenes).map(([name, scene], idx) => {
+        return <li key={idx}>
+          <Link 
+            to={r[name]} 
+            name={name} 
+            icon={icons[name]} 
+            scene={scene}
+            end={idx === 0}
+          />
+        </li>
+      })}
     </ul>
   );
 };

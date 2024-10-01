@@ -45,7 +45,7 @@
 .closeButton {
   margin-left: auto;
   right: 0;
-  background-color: var(--modal-close);
+  background-color: var(--btn);
   border-radius: 0 0 0 100%;
   border-style: solid;
   border-width: 1px;
@@ -54,6 +54,9 @@
   width: 45px;
   height: 45px;
   padding: 0;
+  &:hover {
+    background-color: var(--btn-hover);
+  }
 }
 
 @media (max-height: 575px) {

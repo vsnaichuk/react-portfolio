@@ -1,13 +1,11 @@
-import s from './IntroSection.module.scss';
-import avatar from '../../../assets/avatar.svg';
-import { AiFillGithub } from 'react-icons/ai';
-import {
-  FaFacebookSquare,
-  FaLinkedinIn,
-  FaTelegramPlane,
-} from 'react-icons/fa';
-import Tilt from 'react-parallax-tilt';
+import { AiFillGithub } from '@react-icons/all-files/ai/AiFillGithub';
+import { FaFacebookSquare } from '@react-icons/all-files/fa/FaFacebookSquare';
+import { FaLinkedinIn } from '@react-icons/all-files/fa/FaLinkedinIn';
+import { FaTelegramPlane } from '@react-icons/all-files/fa/FaTelegramPlane';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import Tilt from 'react-parallax-tilt';
+import avatar from '../../../assets/avatar.svg';
+import s from './IntroSection.module.scss';
 
 const IntroSection = () => {
   return (

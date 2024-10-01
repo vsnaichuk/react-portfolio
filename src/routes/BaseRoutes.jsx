@@ -9,11 +9,11 @@ const Projects = lazy(() => import('../scenes/Projects/Projects'));
 const Resume = lazy(() => import('../scenes/Resume/Resume'));
 
 export const routes = {
-  HOME: '/',
-  ABOUT: '/about',
-  PROJECTS: '/projects',
-  PROJECT: '/project/:id',
-  RESUME: '/resume',
+  Home: '/',
+  About: '/about',
+  Projects: '/projects',
+  Project: '/project/:id',
+  Resume: '/resume',
 };
 
 const BaseRoutes = () => {
@@ -23,16 +23,16 @@ const BaseRoutes = () => {
   return (
     <>
       <Routes location={background || location}>
-        <Route path={routes.HOME} element={<Home />} />
-        <Route path={routes.ABOUT} element={<About />} />
-        <Route path={routes.PROJECTS} element={<Projects />} />
-        <Route path={routes.PROJECT} element={<ModalProjectCard />} />
-        <Route path={routes.RESUME} element={<Resume />} />
+        <Route path={routes.Home} element={<Home />} />
+        <Route path={routes.About} element={<About />} />
+        <Route path={routes.Projects} element={<Projects />} />
+        <Route path={routes.Project} element={<ModalProjectCard />} />
+        <Route path={routes.Resume} element={<Resume />} />
       </Routes>
 
       {background && (
         <Routes>
-          <Route path={routes.PROJECT} element={<ModalProjectCard />} />
+          <Route path={routes.Project} element={<ModalProjectCard />} />
         </Routes>
       )}
     </>
