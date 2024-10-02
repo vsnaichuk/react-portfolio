@@ -31,7 +31,7 @@ const data = [
     description:
       'Core maintainer and contributor of React Native native module for Yoco SDK. It allows app developers to integrate with Yoco card machines to accept in-person payments from within their application.',
     image: {
-      src: "https://res.cloudinary.com/dx6tl6aa2/image/upload/v1727717856/portfolio/projects/react-native-yoco_b3bjph.png",
+      src: 'https://res.cloudinary.com/dx6tl6aa2/image/upload/v1727717856/portfolio/projects/react-native-yoco_b3bjph.png',
       placeholderSrc:
         'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzIDIiPjwvc3ZnPg==',
     },
@@ -47,7 +47,7 @@ const data = [
       '#turbo modules',
       '#npm',
       '#payments',
-      '#sdk'
+      '#sdk',
     ],
   },
   {
@@ -107,7 +107,7 @@ const data = [
         'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzIDIiPjwvc3ZnPg==',
     },
     links: {
-      repo: 'https://github.com/vsnaichuk/apiko-marketplace-app-snaichuk',
+      repo: 'https://github.com/vsnaichuk/apiko-marketplace-app',
     },
     technologies: [
       '#react',
