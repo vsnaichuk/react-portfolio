@@ -9,7 +9,7 @@
 
 ## Description
 
-My personal open-source portfolio website <a href="https://sv-dev.netlify.app/" target="_blank">sv-dev.netlify.app</a> <br/>
+Open-source portfolio website <a href="https://sv-dev.netlify.app/" target="_blank">sv-dev.netlify.app</a> <br/>
 
 This project built using these technologies:
 
